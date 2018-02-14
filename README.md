@@ -12,7 +12,6 @@ XXXX
 - Ability to dump the firmware over JTAG or via Flash chips  
 
 **Attempt**: Access to the circuit board.  
-
 **Result**: Failed. The device is well packaged with no screws. The only way to open it is smashing the shell. But we don’t have proper tools to do so.  
 
 ### Firmware
@@ -25,6 +24,7 @@ through the firmware
 
 **Attempt**: Download from official website.  
 **Result**: Failed. Refuse to provide.  
+
 **Attempt**: Draw from hardware.  
 **Result**: Failed. Due to the same reason in hardware part.  
 
