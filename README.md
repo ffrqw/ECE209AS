@@ -1,25 +1,59 @@
-<<<<<<< HEAD
 ## ECE 209AS: Special Topics in Circuits and Embedded Systems: Security and Privacy for Embedded Systems, Cyber-Physical Systems, and Internet of Things
-=======
-## Hacking rachio, the Smart Sprinkler Controller
->>>>>>> 088106c0ffb08eaa14e5c6d58c2b5fa2f2839634
 
-You can use the [editor on GitHub](https://github.com/ffrqw/EE209AS/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Hacking Rachio, the Smart Sprinkler Controller
 
 ### Proposal
 
+### What is rachio?
+XXXX
+
+### Security attack model navigation
+
+### Hardware:
+
+● Serial ports exposed
+● Insecure authentication mechanism used in the serial ports
+● Ability to dump the  firmware over JTAG or via Flash chips
+
+Attempt: access to the circuit board.
+
+Result: Failed. The device is well packaged with no screws. The only way to open it is smashing the shell. But we don’t have proper tools to do so.
+
+### Firmware, software, application:
+1. Firmware
+o Ability to modify firmware
+o Hardcoded sensitive values in the  firmware—API keys,
+passwords, staging URLs, etc.
+o Ability to understand the entire functionality of the device
+through the  firmware
+o File system extraction from the  firmware
+
+Attempt:
+(1). Download from official website.
+Result : failed. Refuse to provide.
+
+(2). Draw from hardware
+Result : failed. Due to the same reason in hardware part.
+
+2. Mobile application
+o Reverse engineering the mobile app
+o Dumping source code of the mobile application
+o Side channel data leakage
+o Runtime manipulation attacks
+o Insecure network communication
+o Outdated 3rd party libraries and SDKs
+
+Attempt:
+Analyze the Android app.
+
 ### Timeline
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+XXX
 
-### Midterm Report
+### 可能攻击的点：
 
-App
-
-可能攻击的点：
-
-Find firmware download url
-Result: failed. Encrypted in somewhere. Cannot find it mannually.
+1. Find firmware download url
+Result: failed. Encrypted in somewhere. Cannot find it mannually.  
 
 2. Password
 Steal password
@@ -33,29 +67,7 @@ ViewScheduleActivity.java
 
 5. *activity.java
 Eg. ChooseWeatherStationActivity.java
-Wrong weather station. Or steal information of the weatherstation.
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ffrqw/EE209AS/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Wrong weather station. Or steal information of the weatherstation.  
 
 ### Reference
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+【1】IoT Hackers Handbook: An ultimate guide to hacking the Internet of Things
