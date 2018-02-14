@@ -1,6 +1,4 @@
-## ECE 209AS: Special Topics in Circuits and Embedded Systems: Security and Privacy for Embedded Systems, Cyber-Physical Systems, and Internet of Things
-
-Hacking Rachio, the Smart Sprinkler Controller
+## Hacking Rachio, the Smart Sprinkler Controller
 
 ### Proposal
 
@@ -11,9 +9,9 @@ XXXX
 
 ### Hardware:
 
-● Serial ports exposed
-● Insecure authentication mechanism used in the serial ports
-● Ability to dump the  firmware over JTAG or via Flash chips
+● Serial ports exposed  
+● Insecure authentication mechanism used in the serial ports  
+● Ability to dump the  firmware over JTAG or via Flash chips  
 
 Attempt: access to the circuit board.
 
