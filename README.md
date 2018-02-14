@@ -23,11 +23,9 @@ passwords, staging URLs, etc.
 through the firmware  
 - File system extraction from the firmware  
 
-**Attempt**:  
-(1). Download from official website  
-**Result**: Failed. Refuse to provide.
-
-(2). Draw from hardware  
+**Attempt**: Download from official website.  
+**Result**: Failed. Refuse to provide.  
+**Attempt**: Draw from hardware.  
 **Result**: Failed. Due to the same reason in hardware part.  
 
 ### Mobile application
