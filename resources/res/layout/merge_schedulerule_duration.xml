@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:id="@+id/totalduationheader" android:background="@color/newgrey" android:paddingLeft="@dimen/padding_double" android:paddingTop="@dimen/padding_general" android:paddingRight="@dimen/padding_double" android:paddingBottom="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/rachio_black" android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/totalwateringtimeheader" android:layout_weight="1.0"/>
+        <include layout="@layout/merge_durationadjust"/>
+    </LinearLayout>
+    <ListView android:id="@+id/schedulerulewizard_zonedurations" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.0"/>
+</merge>

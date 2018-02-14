@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/zoneproperty_icon" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="10dp" android:scaleType="center" android:maxHeight="50dp" android:minHeight="50dp"/>
+    <TextView android:textColor="@color/invertingtext" android:layout_gravity="center_horizontal" android:id="@+id/zoneproperty_label" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:textColor="@color/invertingtext" android:layout_gravity="center_horizontal" android:id="@+id/zoneproperty_description" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

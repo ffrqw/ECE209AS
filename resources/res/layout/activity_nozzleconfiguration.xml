@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/actionbar"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:text="@string/nozzleconfiguration_name" style="@style/Rachio.SettingsHeader"/>
+            <EditText android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/nozzleconfiguration_name" android:singleLine="true" android:inputType="text" style="@style/Rachio.SettingsRow"/>
+            <TextView android:text="@string/nozzleconfiguration_type" style="@style/Rachio.SettingsHeader"/>
+            <Spinner android:id="@+id/nozzleconfiguration_type" style="@style/Rachio.Spinner.Settings.NoBorder"/>
+            <TextView android:text="@string/nozzleconfiguration_brand" style="@style/Rachio.SettingsHeader"/>
+            <EditText android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/nozzleconfiguration_manufacturer" android:hint="@string/nozzleconfiguration_optional" android:singleLine="true" style="@style/Rachio.SettingsRow"/>
+            <TextView android:text="@string/nozzleconfiguration_model" style="@style/Rachio.SettingsHeader"/>
+            <EditText android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/nozzleconfiguration_model" android:hint="@string/nozzleconfiguration_optional" android:singleLine="true" style="@style/Rachio.SettingsRow"/>
+            <TextView android:text="@string/nozzleconfiguration_precip" style="@style/Rachio.SettingsHeader"/>
+            <LinearLayout android:orientation="horizontal" style="@style/Rachio.SettingsRow">
+                <EditText android:textAppearance="?android:attr/textAppearanceMedium" android:layout_gravity="center_vertical" android:id="@+id/nozzleconfiguration_flowrate" android:padding="0dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:inputType="numberDecimal"/>
+                <TextView android:textColor="@color/rachio_dark_grey" android:layout_gravity="center_vertical" android:id="@+id/nozzleconfiguration_flowrate_units" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_general"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

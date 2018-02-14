@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/actionbar"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:text="FULL NAME" style="@style/Rachio.SettingsHeader"/>
+            <EditText android:id="@+id/profile_fullname" android:singleLine="true" android:inputType="textPersonName" style="@style/Rachio.SettingsRow"/>
+            <TextView android:text="EMAIL" android:inputType="textEmailAddress" style="@style/Rachio.SettingsHeader"/>
+            <EditText android:id="@+id/profile_email" style="@style/Rachio.SettingsRow"/>
+            <TextView android:text="USERNAME" style="@style/Rachio.SettingsHeader"/>
+            <TextView android:enabled="false" android:id="@+id/profile_username" style="@style/Rachio.SettingsRowText"/>
+            <TextView android:text="PASSWORD" style="@style/Rachio.SettingsHeader"/>
+            <com.rachio.iro.ui.view.settings.RowWithChevronView android:id="@+id/profile_changepassword" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Change Password"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/actionbar"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.0">
+        <android.support.v4.widget.DrawerLayout android:id="@+id/drawer_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <include android:id="@+id/remote_control_button_bar" android:layout_width="match_parent" android:layout_height="@dimen/remote_control_navbar_height" android:layout_alignParentBottom="true" layout="@layout/view_remote_control_navbar"/>
+                <FrameLayout android:id="@+id/content_frame" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="?android:attr/windowContentOverlay" android:layout_above="@+id/remote_control_button_bar"/>
+                <Button android:id="@+id/remote_floating_action_button" android:background="@drawable/background_remote_control_button_open" android:layout_width="@dimen/remote_control_button_height" android:layout_height="@dimen/remote_control_button_height" android:layout_marginBottom="4dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:onClick="onRemoteControlButtonClicked"/>
+            </RelativeLayout>
+            <include layout="@layout/activity_dashboard_drawer"/>
+        </android.support.v4.widget.DrawerLayout>
+    </FrameLayout>
+</LinearLayout>

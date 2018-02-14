@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="40dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+            <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold" android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/reports_yeartodatesummary" android:layout_weight="1.0"/>
+            <com.rachio.iro.ui.view.reports.YearPicker android:layout_gravity="center_vertical" android:id="@+id/reports_user_year_to_date_year" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="@color/rachio_darker_grey" android:id="@+id/reports_user_used_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/reports_user_used" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="5dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_general">
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="@color/rachio_darker_grey" android:id="@+id/reports_user_saved_label" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/reports_user_saved" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_weight="1.0">
+                <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="@color/rachio_darker_grey" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/reports_raindelays"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/reports_user_raindelays" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/rachio_grey" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+            <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold" android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/reports_savedbycommunity" android:layout_weight="1.0"/>
+            <com.rachio.iro.ui.view.reports.YearPicker android:layout_gravity="center_vertical" android:id="@+id/reports_community_year" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_general">
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="@color/rachio_darker_grey" android:id="@+id/reports_community_saved_label" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/reports_community_saved" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_weight="1.0">
+                <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="@color/rachio_darker_grey" android:id="@+id/reports_community_savedvolume_label" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/reports_community_saved_volume" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="@color/rachio_darker_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/reports_swimmingpools"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/reports_community_saved_swimmingpools" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginBottom="10dp"/>
+        <View android:background="@color/rachio_grey" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp">
+            <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reports_dailyuse" android:layout_weight="1.0"/>
+            <com.rachio.iro.ui.view.reports.MonthPicker android:layout_gravity="center_vertical" android:id="@+id/reports_daily_use_month" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/reports_chart_height">
+            <FrameLayout android:id="@+id/daily_headerHolder" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/pBar_dailyUse" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <include layout="@layout/snippet_chart_chevron"/>
+            <FrameLayout android:id="@+id/reports_daily_use_cover" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <View android:background="@color/rachio_grey" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="5dp">
+            <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reports_monthlywateruse" android:layout_weight="1.0"/>
+            <com.rachio.iro.ui.view.reports.YearPicker android:layout_gravity="center_vertical" android:id="@+id/reports_montly_use_year" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/reports_chart_height">
+            <FrameLayout android:id="@+id/reports_yearly_use_holder" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/reports_yearly_use_progressbar" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <include layout="@layout/snippet_chart_chevron"/>
+            <FrameLayout android:id="@+id/reports_yearly_use_cover" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <View android:background="@color/rachio_grey" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:textColor="@color/rachio_grey" android:gravity="center" android:padding="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/reports_disclaimer"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt"
+    &gt;>
+    <item android:state_enabled="false" android:drawable="@drawable/instabug_edittext_default_bk"/>
+    <item android:state_focused="false" android:state_pressed="false" android:drawable="@drawable/instabug_edittext_default_bk"/>
+    <item android:drawable="@drawable/instabug_edittext_activated_bk"/>
+</selector>

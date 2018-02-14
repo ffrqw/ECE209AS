@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:scrollbarStyle="outsideInset" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/__bu_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:id="@+id/__bu_wps_pin_optional" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/__bu_wps_pin" android:inputType="textPassword"/>
+        <TextView android:gravity="center" android:id="@+id/__bu_wps_info" android:padding="@dimen/__bu_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/__bu_wps_info"/>
+        <TextView android:gravity="center" android:id="@+id/__bu_blinkup_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/__bu_padding" android:layout_marginRight="@dimen/__bu_padding" android:layout_marginBottom="@dimen/__bu_padding" android:text="@string/__bu_blinkup_desc"/>
+        <Button android:id="@+id/__bu_blinkup_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/__bu_send_blinkup" android:onClick="sendBlinkup"/>
+        <include layout="@layout/__bu_legacy_mode"/>
+        <TextView android:gravity="bottom|center_vertical|center_horizontal|center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/__bu_padding" android:text="@string/__bu_blinkup_footer" android:layout_weight="1.0"/>
+    </LinearLayout>
+</ScrollView>

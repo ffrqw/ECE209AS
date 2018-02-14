@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="right" android:id="@+id/welcome_exit" android:paddingTop="@dimen/padding_general" android:paddingRight="@dimen/padding_general" android:paddingBottom="@dimen/padding_half" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/icon_close"/>
+    <com.rachio.iro.ui.newschedulerulepath.views.LockableViewPager android:id="@+id/welcome_pager" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.0"/>
+    <com.viewpagerindicator.CirclePageIndicator android:id="@+id/welcome_indicator" android:paddingTop="@dimen/padding_half" android:paddingBottom="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="wrap_content" app:radius="5dp"/>
+</LinearLayout>

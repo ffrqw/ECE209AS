@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.GridLayout android:background="@color/rachio_faint_grey" android:layout_width="match_parent" android:layout_height="wrap_content" app:columnCount="3">
+        <ImageView android:enabled="false" android:id="@+id/watering_schedule_prev" android:padding="@dimen/padding_double" app:srcCompat="@drawable/calendar_prev" app:layout_rowSpan="2" app:layout_gravity="center_vertical"/>
+        <TextView android:textAppearance="@style/Rachio.TextAppearance.Large" android:textColor="@color/rachio_blue_grey" android:gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/watering_schedule_header_month" android:paddingTop="@dimen/padding_half" android:paddingBottom="1dp" app:layout_gravity="fill"/>
+        <ImageView android:enabled="false" android:id="@+id/watering_schedule_next" android:padding="@dimen/padding_double" app:srcCompat="@drawable/calendar_next" app:layout_rowSpan="2" app:layout_gravity="center_vertical"/>
+        <TextView android:textAppearance="@style/Rachio.TextAppearance.Medium" android:textColor="@color/rachio_blue_grey" android:gravity="top|center_vertical|center_horizontal|center" android:id="@+id/watering_schedule_header_year" android:paddingTop="1dp" android:paddingBottom="@dimen/padding_half" app:layout_gravity="fill"/>
+    </android.support.v7.widget.GridLayout>
+    <android.support.v7.widget.GridLayout android:background="@color/rachio_faint_grey" android:paddingLeft="1dp" android:paddingTop="1dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:orientation="horizontal" app:columnCount="7">
+        <TextView android:text="SUN" style="@style/calendardayheader"/>
+        <TextView android:text="MON" style="@style/calendardayheader"/>
+        <TextView android:text="TUE" style="@style/calendardayheader"/>
+        <TextView android:text="WED" style="@style/calendardayheader"/>
+        <TextView android:text="THU" style="@style/calendardayheader"/>
+        <TextView android:text="FRI" style="@style/calendardayheader"/>
+        <TextView android:text="SAT" style="@style/calendardayheader"/>
+    </android.support.v7.widget.GridLayout>
+    <android.support.v4.view.ViewPager android:id="@+id/calendar_days" android:layout_width="match_parent" android:layout_height="247dp"/>
+    <ListView android:id="@+id/schedule_list" android:background="@color/rachio_white" android:layout_width="match_parent" android:layout_height="0dp" android:foreground="?android:attr/windowContentOverlay" android:choiceMode="singleChoice" android:layout_weight="1.0"/>
+</LinearLayout>

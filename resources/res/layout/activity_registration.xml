@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" style="@style/LoginFormContainer">
+    <include layout="@layout/snippet_rachiologo_dark"/>
+    <EditText android:id="@+id/registration_fullname" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:hint="@string/prompt_fullname" android:maxLines="1" android:singleLine="true" android:inputType="textPersonName"/>
+    <EditText android:id="@+id/registration_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:hint="@string/prompt_emailemail" android:maxLines="1" android:singleLine="true" android:inputType="textEmailAddress"/>
+    <EditText android:id="@+id/registration_username" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:hint="@string/prompt_username" android:maxLines="1" android:singleLine="true" android:inputType="textVisiblePassword"/>
+    <EditText android:id="@+id/registration_password" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:hint="@string/prompt_password" android:maxLines="1" android:singleLine="true" android:inputType="textPassword" android:imeOptions="actionUnspecified" android:imeActionLabel="@string/action_ime_register" android:imeActionId="@+id/register"/>
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.0"/>
+    <Button android:id="@+id/registration_register_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/action_register"/>
+</LinearLayout>

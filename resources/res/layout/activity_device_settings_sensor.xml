@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/actionbar"/>
+    <com.rachio.iro.ui.view.settings.SwitchRowWithDescriptionView android:enabled="false" android:id="@+id/sensorconfig_enabled" android:layout_width="match_parent" android:layout_height="wrap_content" app:switch_title="Enabled"/>
+    <com.rachio.iro.ui.view.settings.DropDownRow android:enabled="false" android:id="@+id/sensorconfig_type" android:layout_width="match_parent" android:layout_height="wrap_content" app:dropdown_title="Type" app:dropdown_entries="@array/sensortypes"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/sensorconfig_flowsensortype_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ListView android:enabled="false" android:id="@+id/sensorconfig_flowsensortype" android:layout_width="match_parent" android:layout_height="wrap_content" android:choiceMode="singleChoice"/>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/sensorconfig_flowsensortype_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/indeterminateProgressStyle"/>
+        </FrameLayout>
+        <TextView android:enabled="false" android:id="@+id/sensorconfig_rainsensortext" android:padding="@dimen/padding_double" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</LinearLayout>

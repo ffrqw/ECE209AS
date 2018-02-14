@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/login_form" style="@style/LoginFormContainer">
+    <include layout="@layout/snippet_rachiologo_dark"/>
+    <EditText android:id="@+id/email" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:hint="@string/prompt_email" android:maxLines="1" android:singleLine="true" android:inputType="textVisiblePassword"/>
+    <EditText android:id="@+id/password" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:hint="@string/prompt_password" android:maxLines="1" android:singleLine="true" android:inputType="textPassword" android:imeOptions="actionUnspecified" android:imeActionLabel="@string/action_sign_in" android:imeActionId="@+id/login"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_gravity="center_horizontal" android:id="@+id/login_passwordreset" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/forgotpassword"/>
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.0"/>
+    <Button android:enabled="false" android:id="@+id/sign_in_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/action_sign_in"/>
+    <Button android:id="@+id/register_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/action_register"/>
+    <TextView android:layout_gravity="center_horizontal" android:paddingTop="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_version"/>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/ringsprogressdialog" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="show rings progress dialog"/>
+        <Button android:id="@+id/newuserwelcome" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="new user welcome"/>
+        <Button android:id="@+id/newintent" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="new intent"/>
+        <EditText android:id="@+id/prodevicelist_deviceoverride" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Override number of devices" android:inputType="numberDecimal"/>
+        <Button android:id="@+id/prodevicelist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Pro Device List"/>
+    </LinearLayout>
+</ScrollView>

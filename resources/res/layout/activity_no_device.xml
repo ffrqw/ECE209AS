@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/blinkup_no_device_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/blinkup_no_device_header" style="@style/Gen2ProvDescription"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.0">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/blinkup_no_device_add_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/blinkup_no_device_add_button" style="@style/ButtonOutlineGreen"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_gravity="center_horizontal" android:id="@+id/blinkup_no_device_sign_out_button" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/blinkup_no_device_sign_out_button"/>
+        </LinearLayout>
+    </FrameLayout>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@android:color/white" android:textColorLink="@color/rachio_blue" android:gravity="center" android:autoLink="web" android:layout_gravity="center_horizontal" android:id="@+id/blinkup_no_device_instruction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/blinkup_no_device_instruction" android:layout_below="@+id/blinkup_iro_image"/>
+</LinearLayout>

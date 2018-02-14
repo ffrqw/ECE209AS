@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.rachio.iro.ui.widget.WeatherForecastDayWidget android:id="@+id/day_forecast_1" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <com.rachio.iro.ui.widget.WeatherForecastDayWidget android:id="@+id/day_forecast_2" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <com.rachio.iro.ui.widget.WeatherForecastDayWidget android:id="@+id/day_forecast_3" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <com.rachio.iro.ui.widget.WeatherForecastDayWidget android:id="@+id/day_forecast_4" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <com.rachio.iro.ui.widget.WeatherForecastDayWidget android:id="@+id/day_forecast_5" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <com.rachio.iro.ui.widget.WeatherForecastDayWidget android:id="@+id/day_forecast_6" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <com.rachio.iro.ui.widget.WeatherForecastDayWidget android:id="@+id/day_forecast_7" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

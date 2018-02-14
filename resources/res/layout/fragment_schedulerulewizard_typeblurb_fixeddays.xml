@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@style/scheduletype_root">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:src="@drawable/sched_type_fixed_days" style="@style/scheduletype_details_icon"/>
+            <TextView android:text="@string/scheduletype_fixeddays" style="@style/scheduletype_details_title"/>
+            <TextView android:text="Choose days of the week to water, like every Monday, Wednesday, and Friday. Enable smart features to let Rachio skip waterings based on weather conditions." style="@style/scheduletype_details_blurb"/>
+            <com.rachio.iro.ui.newschedulerulepath.views.ScheduleTypeSavingsBarView app:indicatorpercentage="0.25" style="@style/scheduletype_details_savingsbar"/>
+            <android.support.v7.widget.GridLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:columnCount="2">
+                <ImageView android:src="@drawable/icon_restrictions" style="@style/scheduletype_bulletpointrow_icon"/>
+                <TextView android:text="Can be used for day of the week watering restrictions." style="@style/scheduletyle_bulletpointrowtext"/>
+                <ImageView android:src="@drawable/icon_seasonal_shift" style="@style/scheduletype_bulletpointrow_icon"/>
+                <TextView android:text="Use Seasonal shift to automatically adjust durations on a monthly basis." style="@style/scheduletyle_bulletpointrowtext"/>
+            </android.support.v7.widget.GridLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:id="@+id/startwizard" android:text="Add Fixed Days Schedule" style="@style/scheduletype_details_button"/>
+</LinearLayout>

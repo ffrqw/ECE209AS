@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/snippet_gen2_helpicon"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding_general" app:srcCompat="@drawable/device_gen2"/>
+        <TextView android:text="Device Activated" style="@style/Gen2ProvTitle"/>
+        <TextView android:text="Your controller is now ready to use. Next you'll be guided through setup." style="@style/Gen2ProvDescription"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.0"/>
+        <Button android:id="@+id/gen2_gotosetup" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Continue to Setup"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/gen2_copyexistingcontainer" android:paddingTop="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.0">
+        <TextView android:gravity="left|center_vertical|center_horizontal|center" android:text="You can also copy the settings from your Rachio Generation 1 controller." android:drawableLeft="@drawable/ic_content_copy_48px" android:drawablePadding="10dp" style="@style/Gen2ProvDescription"/>
+        <ListView android:id="@+id/gen2_existingdevices" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

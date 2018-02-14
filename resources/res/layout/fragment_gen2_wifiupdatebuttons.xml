@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:text="Update WiFi Network" style="@style/Gen2ProvTitle"/>
+    <TextView android:text="To connect to a new network you'll need to reset the WiFi connection on your controller." style="@style/Gen2ProvDescription"/>
+    <ImageView android:layout_width="match_parent" android:layout_height="0dp" android:src="@drawable/wifireset" android:layout_weight="1.0"/>
+    <TextView android:text="Unplug your controller and then plug it back in. Immediately after plugging it back in, hold down the Down Arrow and Select Button until the LED ring is fully illuminated." style="@style/Gen2ProvDescription"/>
+    <Button android:id="@+id/gen2_gotoleds" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Next Step"/>
+</LinearLayout>

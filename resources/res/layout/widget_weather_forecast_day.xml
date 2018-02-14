@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/schedule_day_background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="2dp">
+    <TextView android:id="@+id/widget_forecast_day" android:layout_width="match_parent" android:layout_height="wrap_content" android:minEms="4" style="@style/Rachio.TextAppearance.Schedule.DayHeader"/>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/widget_forecast_condition_image" android:layout_width="match_parent" android:layout_height="30dp" android:layout_margin="5dp"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="14dp" android:layout_gravity="center_horizontal" android:id="@+id/widget_forecast_temperature_hi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2dp" style="@style/Rachio.TextAppearance.Schedule.Text"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="14dp" android:layout_gravity="center_horizontal" android:id="@+id/widget_forecast_temperature_lo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2dp" style="@style/Rachio.TextAppearance.Schedule.Text"/>
+</LinearLayout>

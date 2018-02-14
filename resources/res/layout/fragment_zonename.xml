@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:background="@color/rachio_grey" android:padding="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/padding_general" android:src="@drawable/info"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:gravity="center" android:padding="@dimen/padding_general" android:layout_width="0dp" android:layout_height="wrap_content" android:text="What would you like to name this zone?" android:layout_weight="1.0"/>
+        <ImageView android:id="@+id/zoneproperty_info" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_general" android:src="@drawable/info"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:background="@android:color/white" android:padding="16dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.0">
+        <EditText android:id="@+id/describe_edit_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/zone_help_describe_hint" android:singleLine="true" android:inputType="text"/>
+    </LinearLayout>
+</LinearLayout>

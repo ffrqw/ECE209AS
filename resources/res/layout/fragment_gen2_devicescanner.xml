@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/snippet_gen2_helpicon"/>
+    <TextView android:id="@+id/gen2prov_availabledevicesheader" android:visibility="invisible" android:text="Available Devices" style="@style/Gen2ProvTitle"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.0">
+        <ListView android:id="@+id/gen2prov_devices" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <FrameLayout android:id="@+id/gen2prov_empty" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/gen2prov_searching" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ProgressBar android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding_general" style="?android:attr/indeterminateProgressStyle"/>
+                <TextView android:id="@+id/gen2prov_searchingtext" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Finding devices..." style="@style/Gen2ProvProgress"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/gen2prov_nodevicesfound" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="0dp" android:text="No devices found" android:layout_weight="1.0"/>
+                <Button android:id="@+id/gen2prov_tryagain" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Try again"/>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+    <TextView android:textColor="@color/rachio_blue" android:gravity="center" android:id="@+id/gen2prov_troublefindingdevice" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/gen2prov_troublefindingdevice"/>
+</LinearLayout>

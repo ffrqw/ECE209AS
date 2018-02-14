@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:background="@color/rachio_grey" android:padding="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/padding_general" android:src="@drawable/info"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:gravity="center" android:id="@+id/nozzlelist_description" android:padding="@dimen/padding_general" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.0"/>
+        <ImageView android:id="@+id/zoneproperty_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_general" android:src="@drawable/info"/>
+    </LinearLayout>
+    <GridView android:id="@+id/nozzlelist_grid" android:background="@android:color/white" android:padding="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="match_parent" android:horizontalSpacing="5dp" android:verticalSpacing="5dp" android:numColumns="auto_fit" android:choiceMode="singleChoice"/>
+</LinearLayout>

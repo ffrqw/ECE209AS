@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/snippet_gen2_helpicon"/>
+    <TextView android:text="@string/gen2prov_devicetype" style="@style/Gen2ProvTitle"/>
+    <FrameLayout android:id="@+id/adddevicetype_gen2" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="@dimen/padding_general" android:layout_weight="1.0">
+        <FrameLayout android:layout_gravity="center" android:layout_width="200dp" android:layout_height="200dp">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" app:srcCompat="@drawable/device_gen2"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/rachio_white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Rachio Gen 2"/>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/adddevicetype_gen1" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/padding_general" android:layout_weight="1.0">
+        <FrameLayout android:layout_gravity="center" android:layout_width="200dp" android:layout_height="200dp">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" app:srcCompat="@drawable/device_gen1"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/rachio_white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rachio Gen 1"/>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

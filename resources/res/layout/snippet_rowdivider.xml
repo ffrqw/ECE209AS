@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:background="@drawable/rachio_row_background" android:paddingLeft="@dimen/padding_general" android:paddingRight="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@color/rachio_grey" android:layout_width="match_parent" android:layout_height="1px"/>
+    </FrameLayout>
+</merge>

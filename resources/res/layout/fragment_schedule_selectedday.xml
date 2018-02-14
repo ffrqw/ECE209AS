@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/schedule_selecteddateheader" android:background="@color/rachio_blue_grey_100" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/schedule_selecteddatetext" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/schedule_selecteddatecancel" android:paddingLeft="@dimen/padding_double" android:paddingTop="@dimen/padding_general" android:paddingRight="@dimen/padding_double" android:paddingBottom="@dimen/padding_general" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_close"/>
+    </FrameLayout>
+    <TextView android:textColor="@color/rachio_white" android:gravity="center" android:id="@+id/viewschedule_raindelayheader" android:background="@color/rachio_blue" android:padding="@dimen/padding_general" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Rain delayed until xxx"/>
+    <ListView android:id="@+id/schedule_list" android:background="@color/rachio_white" android:layout_width="match_parent" android:layout_height="0dp" android:foreground="?android:attr/windowContentOverlay" android:choiceMode="singleChoice" android:layout_weight="1.0"/>
+</LinearLayout>

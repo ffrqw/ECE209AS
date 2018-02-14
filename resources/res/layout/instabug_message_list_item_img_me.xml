@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="right" android:id="@+id/instabug_img_attachment" android:background="@drawable/chat_bubble_sent" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginBottom="3dp" android:src="@drawable/instabug_img_placeholder" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+    <TextView android:textSize="@dimen/instabug_date_text_size" android:textColor="#999999" android:gravity="right" android:layout_gravity="right" android:id="@+id/instabug_txt_message_time" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

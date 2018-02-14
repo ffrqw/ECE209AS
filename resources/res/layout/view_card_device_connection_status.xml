@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/card_corner_radius" app:cardElevation="@dimen/card_elevation" app:cardUseCompatPadding="true" app:cardPreventCornerOverlap="false" app:contentPaddingLeft="8dp" app:contentPaddingRight="8dp" app:contentPaddingTop="0dp" app:contentPaddingBottom="0dp">
+    <android.support.v7.widget.GridLayout android:id="@+id/status_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:columnCount="2">
+        <FrameLayout android:layout_height="128dp" app:layout_rowSpan="3">
+            <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/status_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3dp"/>
+                <ImageView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/status_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/device_status_badge"/>
+            </FrameLayout>
+        </FrameLayout>
+        <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="@color/rachio_blue" android:ellipsize="end" android:id="@+id/status_text" android:layout_width="0dp" android:layout_marginTop="30dp" android:layout_marginBottom="@dimen/padding_general" app:layout_columnWeight="1.0"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:gravity="center_vertical" android:id="@+id/lastrun_text" android:visibility="gone" android:layout_width="0dp" android:layout_marginBottom="@dimen/padding_general" app:layout_columnWeight="1.0"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:gravity="center_vertical" android:id="@+id/shared_text" android:visibility="gone" android:layout_width="0dp" app:layout_columnWeight="1.0"/>
+        <View android:id="@+id/horizontal_line" android:background="@color/rachio_black_10_percent" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/padding_general" app:layout_columnSpan="2"/>
+        <LinearLayout app:layout_columnSpan="2" app:layout_gravity="fill_horizontal">
+            <TextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/raindelay" android:padding="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="No Rain Delay" android:drawableLeft="@drawable/device_status_raindelayicon" android:drawablePadding="5dp" android:layout_weight="1.0" app:layout_gravity="fill_horizontal"/>
+            <TextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/edit_settings_text" android:padding="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Device Settings" android:drawableLeft="@drawable/device_status_settings" android:drawablePadding="5dp" android:layout_weight="1.0" app:layout_gravity="fill_horizontal"/>
+        </LinearLayout>
+    </android.support.v7.widget.GridLayout>
+</android.support.v7.widget.CardView>

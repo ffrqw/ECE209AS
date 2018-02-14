@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/instabug_color_window_background" android:layout_width="match_parent" android:layout_height="match_parent" android:onClick="onClick">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/instabug_fragment_bk_container" android:background="@drawable/instabug_dialog_shadow" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/instabug_dialog_container_padding" android:layout_centerInParent="true">
+            <FrameLayout android:id="@+id/instabug_fragment_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <View android:id="@+id/instabug_fragment_blackout" android:background="?attr/instabug_color_window_background" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:onClick="onClick"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/instabug_pbi_container" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:layout_alignParentBottom="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/instabug_pbi_image" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginRight="4dp"/>
+            <TextView android:textColor="@color/instabug_text_color_grey" android:id="@+id/instabug_pbi_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/instabug_str_pbi"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@+id/instabug_bottomsheet_container" android:background="?attr/instabug_color_window_background" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</FrameLayout>

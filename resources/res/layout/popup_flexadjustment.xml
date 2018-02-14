@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="65dp" android:layout_height="match_parent">
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/rachio_white" android:gravity="center" android:background="#084389" android:padding="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="More"/>
+    <com.rachio.iro.ui.view.SuperDuperRadioGroup android:orientation="vertical" android:id="@+id/flexadjustment_choice" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:background="#084389" android:padding="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:layout_gravity="center" android:id="@+id/flexadjustment_choice_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/radio_round_white"/>
+        </FrameLayout>
+        <FrameLayout android:background="#0f73c6" android:padding="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:layout_gravity="center" android:id="@+id/flexadjustment_choice_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/radio_round_white"/>
+        </FrameLayout>
+        <FrameLayout android:background="#1397f1" android:padding="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:layout_gravity="center" android:id="@+id/flexadjustment_choice_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/radio_round_white"/>
+        </FrameLayout>
+        <FrameLayout android:background="#43b5f5" android:padding="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:layout_gravity="center" android:id="@+id/flexadjustment_choice_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/radio_round_white"/>
+        </FrameLayout>
+        <FrameLayout android:background="#a5dffb" android:padding="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:layout_gravity="center" android:id="@+id/flexadjustment_choice_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/radio_round_white"/>
+        </FrameLayout>
+    </com.rachio.iro.ui.view.SuperDuperRadioGroup>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/rachio_white" android:gravity="center" android:layout_gravity="center_horizontal" android:background="#a5dffb" android:padding="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Less"/>
+</LinearLayout>

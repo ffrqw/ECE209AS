@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/instabug_options_invocation" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/InstabugBottomSheetContainer">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/instabug_bottom_sheet_title_height">
+        <TextView android:id="@+id/instabug_invocation_screen_title" android:text="@string/instabug_str_invocation_header" style="@style/InstabugBottomSheetTitle"/>
+        <ImageView android:id="@+id/instabug_btn_conversations" style="@style/InstabugBottomSheetAction"/>
+    </FrameLayout>
+    <LinearLayout android:id="@+id/instabug_option_report_bug" style="@style/InstabugBottomSheetItemContainer">
+        <ImageView android:src="?attr/instabug_bug_icon" style="@style/InstabugBottomSheetItemImage"/>
+        <TextView android:id="@+id/instabug_option_report_bug_text" android:text="@string/instabug_str_bug_header" style="@style/InstabugBottomSheetItemText"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/instabug_option_send_feedback" style="@style/InstabugBottomSheetItemContainer">
+        <ImageView android:src="?attr/instabug_feedback_icon" style="@style/InstabugBottomSheetItemImage"/>
+        <TextView android:id="@+id/instabug_option_send_feedback_text" android:text="@string/instabug_str_feedback_header" style="@style/InstabugBottomSheetItemText"/>
+    </LinearLayout>
+    <include layout="@layout/instabug_vertical_separator"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/instabug_pbi_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/instabug_pbi_image" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginRight="4dp"/>
+        <TextView android:textColor="#737373" android:id="@+id/instabug_pbi_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/instabug_str_pbi"/>
+    </LinearLayout>
+</LinearLayout>

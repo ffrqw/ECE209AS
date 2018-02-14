@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:drawable="@drawable/ic_watering_schedule_both_today" app:state_schedule_today="true" app:state_schedule_flex="true" app:state_schedule_fixed="true"/>
+    <item android:drawable="@drawable/ic_watering_schedule_both" app:state_schedule_flex="true" app:state_schedule_fixed="true"/>
+    <item android:drawable="@drawable/ic_watering_schedule_fixed_today" app:state_schedule_today="true" app:state_schedule_fixed="true"/>
+    <item android:drawable="@drawable/ic_watering_schedule_fixed" app:state_schedule_fixed="true"/>
+    <item android:drawable="@drawable/ic_watering_schedule_flex" app:state_schedule_flex="true"/>
+    <item android:drawable="@drawable/ic_watering_schedule_raindelay_today" app:state_schedule_today="true" app:state_schedule_raindelay="true"/>
+    <item android:drawable="@drawable/ic_watering_schedule_raindelay" app:state_schedule_raindelay="true"/>
+    <item android:drawable="@drawable/ic_watering_schedule_none"/>
+</selector>

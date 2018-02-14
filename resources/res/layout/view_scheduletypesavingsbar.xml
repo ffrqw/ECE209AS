@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/scheduletypebehaviourbargradient"/>
+        <ImageView android:id="@+id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/scheduletypebarindicator"/>
+    </FrameLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+        <TextView android:text="Predictable" style="@style/scheduletype_bar_text"/>
+        <TextView android:gravity="right" android:text="Savings" style="@style/scheduletype_bar_text"/>
+    </LinearLayout>
+</merge>

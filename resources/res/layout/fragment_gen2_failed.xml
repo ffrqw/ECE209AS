@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:text="Failed" style="@style/Gen2ProvTitle"/>
+    <TextView android:id="@+id/gen2_failurereason" style="@style/Gen2ProvDescription"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.0"/>
+    <Button android:id="@+id/gen2_retry" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding_general" android:text="Try again"/>
+    <Button android:id="@+id/gen2_gotodashboard" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Return to dashboard"/>
+</LinearLayout>

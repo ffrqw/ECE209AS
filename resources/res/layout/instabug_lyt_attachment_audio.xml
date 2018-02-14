@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/instabug_img_audio_attachment" android:background="?attr/instabug_item_border" android:padding="2dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="4dp" android:src="@drawable/instabug_img_audio_placeholder" android:scaleType="fitXY"/>
+    <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/instabug_btn_remove_attachment" android:paddingLeft="12dp" android:paddingBottom="12dp" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/instabug_ic_remove_bordered"/>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="1dp">
+        <ImageView android:layout_gravity="center" android:id="@+id/instabug_btn_play_attachment" android:background="@drawable/instabug_bk_white_stroke" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/instabug_ic_play"/>
+        <TextView android:textSize="14sp" android:textStyle="bold" android:gravity="center" android:id="@+id/instabug_txt_attachment_length" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</FrameLayout>

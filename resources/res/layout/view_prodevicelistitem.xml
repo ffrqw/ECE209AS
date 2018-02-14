@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textAppearance="@style/Rachio.TextAppearance.Medium" android:textColor="@color/rachio_black" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/prodevicelist_locationservices" android:background="#ffc107" android:padding="@dimen/padding_general" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Location Services are disabled" android:drawableRight="@drawable/help_circle_outline"/>
+    <android.support.v7.widget.GridLayout android:background="@color/rachio_white" android:padding="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="wrap_content" app:rowCount="2" app:columnCount="4">
+        <FrameLayout android:id="@+id/prodevicelistitem_checkindexholder" android:layout_width="30dp" android:layout_marginRight="@dimen/padding_general" app:layout_rowSpan="2" app:layout_gravity="top|bottom|center_vertical|fill_vertical|center_horizontal|center">
+            <ImageView android:id="@+id/prodevicelistitem_check" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/proselecteddevicecheck" android:adjustViewBounds="true"/>
+            <TextView android:textAppearance="@style/Rachio.TextAppearance.Large" android:textColor="@color/rachio_grey" android:gravity="center" android:layout_gravity="center" android:id="@+id/prodevicelistitem_index" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <TextView android:textAppearance="@style/Rachio.TextAppearance.Medium" android:textColor="@color/rachio_black" android:ellipsize="end" android:id="@+id/prodevicelistitem_topline" android:layout_width="0dp" android:maxLines="1" app:layout_columnWeight="2.0" app:layout_gravity="fill_horizontal"/>
+        <FrameLayout android:layout_marginLeft="@dimen/padding_half" android:layout_marginRight="@dimen/padding_half" app:layout_gravity="bottom">
+            <TextView android:textColor="@color/rachio_green" android:layout_gravity="right" android:id="@+id/prodevicelistitem_status_online" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ONLINE"/>
+            <TextView android:textColor="@color/rachio_green" android:layout_gravity="right" android:id="@+id/prodevicelistitem_status_raindelay" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RAIN DELAY"/>
+            <TextView android:textColor="@color/rachio_orange" android:layout_gravity="right" android:id="@+id/prodevicelistitem_status_disabled" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="STANDBY"/>
+            <TextView android:textColor="@color/rachio_red" android:layout_gravity="right" android:id="@+id/prodevicelistitem_status_offline" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OFFLINE"/>
+        </FrameLayout>
+        <TextView android:gravity="right" android:id="@+id/prodevicelistitem_distance" app:layout_columnWeight="1.0" app:layout_gravity="bottom"/>
+        <TextView android:ellipsize="end" android:id="@+id/prodevicelistitem_bottomline" android:layout_width="0dp" android:layout_marginTop="@dimen/padding_half" android:maxLines="1" app:layout_columnSpan="3" app:layout_gravity="fill_horizontal"/>
+    </android.support.v7.widget.GridLayout>
+    <TextView android:id="@+id/prodevicelist_results" android:padding="@dimen/padding_half" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

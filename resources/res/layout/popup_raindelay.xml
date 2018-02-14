@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/rachio_white" android:padding="@dimen/padding_general" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:text="Rain Delay Days"/>
+    <com.rachio.iro.ui.view.SuperDuperRadioGroup android:orientation="vertical" android:id="@+id/popup_raindelay_choices" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/popup_raindelay_choice_1" android:text="1" style="@style/RainDelayRadio"/>
+        <RadioButton android:id="@+id/popup_raindelay_choice_2" android:text="2" style="@style/RainDelayRadio"/>
+        <RadioButton android:id="@+id/popup_raindelay_choice_3" android:text="3" style="@style/RainDelayRadio"/>
+        <RadioButton android:id="@+id/popup_raindelay_choice_4" android:text="4" style="@style/RainDelayRadio"/>
+        <RadioButton android:id="@+id/popup_raindelay_choice_5" android:text="5" style="@style/RainDelayRadio"/>
+        <RadioButton android:id="@+id/popup_raindelay_choice_6" android:text="6" style="@style/RainDelayRadio"/>
+        <RadioButton android:id="@+id/popup_raindelay_choice_7" android:text="7" style="@style/RainDelayRadio"/>
+        <RadioButton android:id="@+id/popup_raindelay_choice_off" android:layout_marginBottom="0dp" android:text="Off" style="@style/RainDelayRadio"/>
+    </com.rachio.iro.ui.view.SuperDuperRadioGroup>
+</LinearLayout>

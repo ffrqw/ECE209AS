@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@style/welcomefrag">
+    <TextView android:text="Use zones to enter details about your yard." style="@style/welcometitle"/>
+    <include layout="@layout/merge_welcome_video"/>
+    <TextView android:text="Customize your zones with vegetation, soil type, nozzles and more." style="@style/welcomedescription"/>
+</LinearLayout>

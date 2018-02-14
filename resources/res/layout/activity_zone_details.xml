@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/actionbar"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/zone_details_image" android:layout_width="match_parent" android:layout_height="220dp" android:layout_marginTop="20dp" android:scaleType="centerCrop"/>
+                <ImageView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/zone_details_take" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/takephoto"/>
+                <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/zone_details_select" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selectphoto"/>
+            </FrameLayout>
+            <TextView android:text="@string/nozzleconfiguration_name" style="@style/Rachio.SettingsHeader"/>
+            <EditText android:id="@+id/zone_details_description_edit" android:layout_marginBottom="@dimen/padding_general" android:inputType="text" style="@style/Rachio.SettingsRow"/>
+            <android.support.v7.widget.SwitchCompat android:id="@+id/zone_details_enabled_switch" android:layout_marginBottom="@dimen/padding_general" android:text="@string/enabled" style="@style/AppSettingsSwitch"/>
+            <android.support.v7.widget.GridLayout android:id="@+id/zone_details_moisturelevel" android:layout_marginBottom="@dimen/padding_general" app:columnCount="2" style="@style/Rachio.SettingsRow">
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/zone_details_moisturelevel_percentage" android:layout_width="0dp" android:text="Updating..." app:layout_gravity="fill_horizontal"/>
+                <ImageView android:src="@drawable/moisture_level" app:layout_rowSpan="2" app:layout_gravity="center_vertical"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="0dp" android:text="Moisture Level" app:layout_gravity="fill_horizontal"/>
+            </android.support.v7.widget.GridLayout>
+            <android.support.v7.widget.GridLayout android:id="@+id/zone_details_type" app:columnCount="2" style="@style/Rachio.SettingsRow">
+                <com.rachio.iro.ui.widget.ColoredImageView android:id="@+id/zone_details_type_icon" app:civ_color="#ff000000" style="@style/Rachio.ZoneParameterIcon"/>
+                <TextView android:text="@string/zone_details_type_label" app:layout_gravity="fill_horizontal"/>
+                <TextView android:id="@+id/zone_details_type_text" style="@style/Rachio.ZoneParameterSelection"/>
+            </android.support.v7.widget.GridLayout>
+            <android.support.v7.widget.GridLayout android:id="@+id/zone_details_soil" app:columnCount="2" style="@style/Rachio.SettingsRow">
+                <com.rachio.iro.ui.widget.ColoredImageView android:id="@+id/zone_details_soil_icon" app:civ_color="#ff000000" style="@style/Rachio.ZoneParameterIcon"/>
+                <TextView android:text="@string/zone_details_soil_label" app:layout_gravity="fill_horizontal"/>
+                <TextView android:id="@+id/zone_details_soil_text" style="@style/Rachio.ZoneParameterSelection"/>
+            </android.support.v7.widget.GridLayout>
+            <android.support.v7.widget.GridLayout android:id="@+id/zone_details_shade" app:columnCount="2" style="@style/Rachio.SettingsRow">
+                <com.rachio.iro.ui.widget.ColoredImageView android:id="@+id/zone_details_shade_icon" app:civ_color="#ff000000" style="@style/Rachio.ZoneParameterIcon"/>
+                <TextView android:text="@string/zone_details_shade_label" app:layout_gravity="fill_horizontal"/>
+                <TextView android:id="@+id/zone_details_shade_text" style="@style/Rachio.ZoneParameterSelection"/>
+            </android.support.v7.widget.GridLayout>
+            <android.support.v7.widget.GridLayout android:id="@+id/zone_details_nozzle" app:columnCount="2" style="@style/Rachio.SettingsRow">
+                <com.rachio.iro.ui.widget.ColoredImageView android:id="@+id/zone_details_nozzle_icon" app:civ_color="#ff000000" style="@style/Rachio.ZoneParameterIcon"/>
+                <TextView android:text="@string/zone_details_nozzle_label" app:layout_gravity="fill_horizontal"/>
+                <TextView android:id="@+id/zone_details_nozzle_text" style="@style/Rachio.ZoneParameterSelection"/>
+            </android.support.v7.widget.GridLayout>
+            <android.support.v7.widget.GridLayout android:id="@+id/zone_details_slope" app:columnCount="2" style="@style/Rachio.SettingsRow">
+                <com.rachio.iro.ui.widget.ColoredImageView android:id="@+id/zone_details_slope_icon" app:civ_color="#ff000000" style="@style/Rachio.ZoneParameterIcon"/>
+                <TextView android:text="@string/zone_details_slope_label" app:layout_gravity="fill_horizontal"/>
+                <TextView android:id="@+id/zone_details_slope_text" style="@style/Rachio.ZoneParameterSelection"/>
+            </android.support.v7.widget.GridLayout>
+            <LinearLayout android:id="@+id/zone_details_advanced" android:layout_marginTop="10dp" style="@style/Rachio.SettingsRow">
+                <com.rachio.iro.ui.widget.ColoredImageView android:layout_gravity="center_vertical" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/advanced" app:civ_color="#ff000000"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zone_details_advanced_label" android:layout_weight="1.0"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

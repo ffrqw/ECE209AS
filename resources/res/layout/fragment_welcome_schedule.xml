@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@style/welcomefrag">
+    <TextView android:text="Create the exact schedule you want." style="@style/welcometitle"/>
+    <include layout="@layout/merge_welcome_video"/>
+    <TextView android:text="Create, edit, and delete schedules to tailor watering to your needs." style="@style/welcomedescription"/>
+</LinearLayout>

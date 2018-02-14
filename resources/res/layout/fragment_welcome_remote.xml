@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@style/welcomefrag">
+    <TextView android:text="Remote control your sprinklers." style="@style/welcometitle"/>
+    <include layout="@layout/merge_welcome_video"/>
+    <TextView android:text="Run your sprinklers from anywhere with the remote." style="@style/welcomedescription"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.rachio.iro.ui.view.settings.RowWithCurrentValueThatExpands android:id="@+id/schedulerulewizard_automation_smartcycle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Smart Cycle" android:drawable="@drawable/expander" app:viewundercontrol="@+id/schedulerulewizard_automation_smartcycle_container"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/schedulerulewizard_automation_smartcycle_container" android:background="@color/newgrey" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="match_parent" android:layout_height="2dp" android:src="@drawable/step"/>
+        <android.support.v7.widget.SwitchCompat android:id="@+id/schedulerulewizard_automation_smartcycle_switch" android:background="@color/newgrey" android:text="@string/smartcycledescription" style="@style/AppSettingsSwitch.SmallText"/>
+    </LinearLayout>
+    <com.rachio.iro.ui.view.settings.RowWithCurrentValueAndChevronView android:id="@+id/schedulerulewizard_automation_weatherintelligence" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Weather Intelligence" android:drawable="@drawable/expander"/>
+</merge>

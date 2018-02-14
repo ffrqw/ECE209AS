@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@style/scheduletype_root">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:src="@drawable/sched_type_daily_flex" style="@style/scheduletype_details_icon"/>
+            <TextView android:text="@string/scheduletype_flexdaily" style="@style/scheduletype_details_title"/>
+            <TextView android:text="Let Rachio determine when to water dynamically. Zone by zone watering will change based on weather conditions and soil moisture. Watering durations may change based on need." style="@style/scheduletype_details_blurb"/>
+            <com.rachio.iro.ui.newschedulerulepath.views.ScheduleTypeSavingsBarView app:indicatorpercentage="1.0" style="@style/scheduletype_details_savingsbar"/>
+            <android.support.v7.widget.GridLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:columnCount="2">
+                <ImageView android:src="@drawable/icon_restrictions" style="@style/scheduletype_bulletpointrow_icon"/>
+                <TextView android:text="Recommended for schedules with 3 or fewer restricted days per week." style="@style/scheduletyle_bulletpointrowtext"/>
+                <ImageView android:src="@drawable/icon_setup" style="@style/scheduletype_bulletpointrow_icon"/>
+                <TextView android:text="Advanced zone settings must be correct to water effectively." style="@style/scheduletyle_bulletpointrowtext"/>
+                <ImageView android:src="@drawable/icon_heavy_watering" style="@style/scheduletype_bulletpointrow_icon"/>
+                <TextView android:text="Expect a heavy watering on the schedule start date." style="@style/scheduletyle_bulletpointrowtext"/>
+            </android.support.v7.widget.GridLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:id="@+id/startwizard" android:text="Add Flexible Daily Schedule" style="@style/scheduletype_details_button"/>
+</LinearLayout>

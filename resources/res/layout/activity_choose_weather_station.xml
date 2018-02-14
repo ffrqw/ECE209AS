@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/actionbar"/>
+    <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.5">
+        <fragment android:name="com.google.android.gms.maps.SupportMapFragment" android:id="@+id/map" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.rachio.iro.ui.view.ProgressView android:id="@+id/progress_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TextView android:id="@+id/google_play_error_text" android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/weather_station_google_play_services_error" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <include layout="@layout/activity_choose_weather_station_pwsswitch"/>
+    <ListView android:id="@+id/weather_station_list" android:background="@color/rachio_white" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.5"/>
+</LinearLayout>

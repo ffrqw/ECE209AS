@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:text="Update WiFi Network" style="@style/Gen2ProvTitle"/>
+    <TextView android:text="Your controller will reset it's WiFi connection. This may take several minutes." style="@style/Gen2ProvDescription"/>
+    <ImageView android:padding="20dp" android:layout_width="match_parent" android:layout_height="0dp" android:src="@drawable/wifireset_leds" android:layout_weight="1.0"/>
+    <TextView android:text="Your controller is ready to connnect to a new WiFi network when the LED lights look like the image above with the top light blinking." style="@style/Gen2ProvDescription"/>
+    <Button android:id="@+id/gen2_gotoupdate" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="My Controller is Ready"/>
+</LinearLayout>

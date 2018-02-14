@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/__bu_legacy_mode" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <CheckBox android:id="@+id/__bu_legacy_mode_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/__bu_padding" android:checked="false" android:text="@string/__bu_legacy_mode"/>
+    <TextView android:textSize="16sp" android:gravity="center" android:focusable="true" android:clickable="true" android:layout_width="30dp" android:layout_height="30dp" android:text="@string/__bu_legacy_mode_link" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="legacyModeLink" style="@style/BlinkUp.SelectableText"/>
+</RelativeLayout>

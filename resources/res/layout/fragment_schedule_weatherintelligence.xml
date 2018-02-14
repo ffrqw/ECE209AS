@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+    <TextView android:text="We recommend these smart features to save water while keeping your yard healthy." style="@style/schedulerulewizard_settingsdescription"/>
+    <com.rachio.iro.ui.view.settings.RowWithCurrentValueThatExpands android:id="@+id/seasonaladjustment" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Seasonal Shift" app:viewundercontrol="@+id/seasonaladjustmentswitch"/>
+    <android.support.v7.widget.SwitchCompat android:id="@+id/seasonaladjustmentswitch" android:background="@color/newgrey" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/seasonalshift_descriptions" style="@style/AppSettingsSwitch.SmallText"/>
+    <com.rachio.iro.ui.view.settings.RowWithCurrentValueThatExpands android:id="@+id/climateskip" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Climate Skip" app:viewundercontrol="@+id/climateskipswitch"/>
+    <android.support.v7.widget.SwitchCompat android:id="@+id/climateskipswitch" android:background="@color/newgrey" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Watering times will be skipped based on recent past and future weather conditions." style="@style/AppSettingsSwitch.SmallText"/>
+    <com.rachio.iro.ui.view.settings.RowWithCurrentValueAndChevronView android:id="@+id/rainskip" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Rain Skip"/>
+    <com.rachio.iro.ui.view.settings.RowWithCurrentValueAndChevronView android:id="@+id/freezeskip" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Freeze Skip"/>
+</LinearLayout>

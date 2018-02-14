@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/actionbar"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:text="UNITS" style="@style/Rachio.SettingsHeader"/>
+            <FrameLayout android:background="@android:color/white" android:padding="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RadioGroup android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/preferences_units" android:padding="@dimen/padding_general" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RadioButton android:textColor="@drawable/blockradio_blue_textcolor" android:id="@+id/preferences_units_us" android:background="@drawable/blockradio_blue_background_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="US Standard (°F)"/>
+                    <RadioButton android:textColor="@drawable/blockradio_blue_textcolor" android:id="@+id/preferences_units_metric" android:background="@drawable/blockradio_blue_background_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-1px" android:button="@null" android:text="Metric (°C)"/>
+                </RadioGroup>
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/preferences_notifications_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <android.support.v7.widget.SwitchCompat android:id="@+id/preferences_global" android:text="Alerts and Notifications" style="@style/AppSettingsSwitch"/>
+                <TextView android:text="SEND ME AN EMAIL ALERT WHEN" style="@style/Rachio.SettingsHeader"/>
+                <android.support.v7.widget.SwitchCompat android:id="@+id/preferences_raindelayemail" android:layout_marginTop="0dp" android:text="A scheduled watering time is skipped because of weather" style="@style/AppSettingsSwitch"/>
+                <android.support.v7.widget.SwitchCompat android:id="@+id/preferences_waterbudgetemail" android:text="Seasonal adjustments are made to my watering schedule" style="@style/AppSettingsSwitch"/>
+                <TextView android:text="SEND ME A NOTIFICATION WHEN" style="@style/Rachio.SettingsHeader"/>
+                <android.support.v7.widget.SwitchCompat android:id="@+id/preferences_raindelaynotification" android:layout_marginTop="0dp" android:text="@string/preferences_notify_skipped" style="@style/AppSettingsSwitch"/>
+                <android.support.v7.widget.SwitchCompat android:id="@+id/preferences_rainsensor" android:text="@string/preferences_notify_rainsensor" style="@style/AppSettingsSwitch"/>
+                <android.support.v7.widget.SwitchCompat android:id="@+id/preferences_waterbudgetnotification" android:text="@string/preferences_notify_seasonaladjustmen" style="@style/AppSettingsSwitch"/>
+                <android.support.v7.widget.SwitchCompat android:id="@+id/preferences_devicestatusnotification" android:text="@string/preferences_notifystatuschange" style="@style/AppSettingsSwitch"/>
+                <android.support.v7.widget.SwitchCompat android:id="@+id/preferences_schedulestatusnotification" android:text="@string/preferences_notifyschedulestatuschange" style="@style/AppSettingsSwitch"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

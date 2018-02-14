@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.GridLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:padding="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="wrap_content" app:columnCount="3" app:useDefaultMargins="true">
+    <ImageView android:adjustViewBounds="true" app:srcCompat="@drawable/warning" app:layout_columnSpan="2" app:layout_gravity="center_vertical"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@android:color/black" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="130dp" android:layout_marginLeft="@dimen/padding_general" android:text="Removing this device will permanently delete all device data including schedules, zone information and history." app:layout_gravity="fill"/>
+    <CheckBox android:id="@+id/deletedialog_check" android:layout_marginTop="10dp"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="@android:color/black" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="23dp" android:text="By checking this box you acknowledge that you understand that removing this device will permanently delete all device data and that this action cannot be undone." app:layout_columnSpan="2" app:layout_gravity="fill"/>
+</android.support.v7.widget.GridLayout>

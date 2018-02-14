@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/rachio_dark_blue" android:padding="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/gen2prov_progresscontainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding_general">
+                <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/indeterminateProgressStyle"/>
+                <ImageView android:layout_gravity="center" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/checkmark"/>
+            </FrameLayout>
+            <TextView android:id="@+id/gen2prov_progress" style="@style/Gen2ProvProgress"/>
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@+id/gen2prov_subtext" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/gen2prov_finished" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginBottom="@dimen/padding_general" app:srcCompat="@drawable/checkmark"/>
+            <TextView android:id="@+id/gen2prov_finishedtext" style="@style/Gen2ProvProgress"/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

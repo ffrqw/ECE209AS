@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/actionbar"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:text="@string/dialog_device_name_name_header" style="@style/Rachio.SettingsHeader"/>
+            <EditText android:id="@+id/dialog_device_name_name" android:inputType="textPersonName" style="@style/Rachio.SettingsRow">
+                <requestFocus/>
+            </EditText>
+            <TextView android:text="@string/dialog_device_name_zip_header" style="@style/Rachio.SettingsHeader"/>
+            <EditText android:id="@+id/dialog_device_name_zip" android:inputType="textPersonName" style="@style/Rachio.SettingsRow"/>
+            <TextView android:text="@string/dialog_device_name_geolocation_header" style="@style/Rachio.SettingsHeader"/>
+            <TextView android:id="@+id/dialog_device_name_geolocation" style="@style/Rachio.SettingsRowText"/>
+            <Button android:id="@+id/dialog_device_locationupdate" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dialog_device_name_geolocation_button" android:onClick="onSaveLocationClick" style="@style/ButtonSolidBlue.SquareCorners"/>
+            <TextView android:text="Note: Please make sure you enter the zip code where your device is located. When updating your geographic location, make sure you are in a location that is close to your sprinkler controller." style="@style/schedulerulewizard_subdescription"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

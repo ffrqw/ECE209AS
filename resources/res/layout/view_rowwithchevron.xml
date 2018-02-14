@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Rachio.SettingsRow">
+    <TextView android:textAppearance="@style/Rachio.TextAppearance.Medium" android:textColor="@color/rachio_black" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/text" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0"/>
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@+id/nexttochevron" android:visibility="gone" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="2.0"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/drawable" android:visibility="invisible" android:layout_width="9dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/padding_general" android:scaleType="center"/>
+</LinearLayout>

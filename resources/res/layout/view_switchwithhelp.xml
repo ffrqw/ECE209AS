@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/rachio_row_background" android:padding="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_gravity="center" android:id="@+id/switchwithhelp_text" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.0"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/switchwithhelp_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/padding_general" android:src="@drawable/validation_info"/>
+    <android.support.v7.widget.SwitchCompat android:layout_gravity="center" android:id="@+id/switchwithhelp_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="@string/add_schedule_restriction_yes" android:textOff="@string/add_schedule_restriction_no"/>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/newgrey" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/enddate_radiocontainer" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/enddateblurb" style="@style/schedulerulewizard_settingsdescription"/>
+            <RadioGroup android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/enddate_neverselect" android:padding="@dimen/padding_general" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RadioButton android:textColor="@drawable/blockradio_blue_textcolor" android:id="@+id/never" android:background="@drawable/blockradio_blue_background_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="Never"/>
+                <RadioButton android:textColor="@drawable/blockradio_blue_textcolor" android:id="@+id/selectdate" android:background="@drawable/blockradio_blue_background_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-1px" android:button="@null" android:text="Select Date"/>
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+    <DatePicker android:layout_gravity="center" android:id="@+id/datepicker" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

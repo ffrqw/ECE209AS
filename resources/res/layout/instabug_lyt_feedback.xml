@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@style/InstabugBaseContainer">
+    <include layout="@layout/instabug_lyt_toolbar"/>
+    <LinearLayout android:orientation="vertical" style="@style/InstabugDialogContainer">
+        <ScrollView android:scrollbarStyle="insideOverlay" android:layout_width="match_parent" android:layout_height="0dp" android:fillViewport="true" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:id="@+id/instabug_edtxt_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:hint="@string/instabug_str_email_hint" android:singleLine="true" android:inputType="textEmailAddress" android:textCursorDrawable="@null" style="?android:attr/editTextStyle"/>
+                <EditText android:gravity="bottom" android:id="@+id/instabug_edtxt_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="5" android:minLines="1" android:singleLine="false" android:inputType="none|text|textAutoCorrect|textMultiLine" android:textCursorDrawable="@null"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/instabug_lyt_attachments_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:weightSum="4.0" android:minHeight="100dp"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

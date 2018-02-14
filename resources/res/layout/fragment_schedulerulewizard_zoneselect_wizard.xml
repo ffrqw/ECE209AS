@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:text="Which zones would you like to water in this schedule?" style="@style/schedulerulewizard_settingsdescription"/>
+    <android.support.v7.widget.RecyclerView android:id="@+id/schedulerulewizard_zoneselect_list" android:padding="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="0dp" android:choiceMode="multipleChoice" android:layout_weight="1.0"/>
+</LinearLayout>

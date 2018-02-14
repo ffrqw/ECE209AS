@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:clickable="true" android:layout_height="match_parent" style="@style/InstabugBaseContainer">
+    <RelativeLayout android:layout_marginBottom="0dp" style="@style/InstabugDialogToolbarContainer">
+        <TextView android:id="@+id/instabug_fragment_title" style="@style/InstabugDialogTitle"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:padding="0dp" style="@style/InstabugDialogContainer">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/instabug_blank" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?attr/instabug_no_messages_img"/>
+            <TextView android:textStyle="bold" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No Conversations Yet"/>
+            <TextView android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Press back to send us your first feedback"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/instabug_disconnected" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?attr/instabug_no_connection_img"/>
+            <TextView android:textStyle="bold" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No Internet Connection"/>
+        </LinearLayout>
+        <ListView android:id="@+id/instabug_lst_conversations" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:drawSelectorOnTop="true" android:divider="@null" android:dividerHeight="0dp" android:layout_weight="1.0"/>
+    </LinearLayout>
+</LinearLayout>

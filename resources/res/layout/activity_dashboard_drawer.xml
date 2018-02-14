@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="start" android:orientation="vertical" android:id="@+id/navigation_drawer" android:background="@color/rachio_drawer_background" android:layout_width="240dp" android:layout_height="match_parent">
+        <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.rachio.iro.ui.view.NonScrollableListView android:id="@+id/dashboard_drawer_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@android:color/transparent" android:dividerHeight="0dp"/>
+                <android.support.v7.widget.GridLayout android:id="@+id/dashboard_drawer_nozzles" android:paddingLeft="@dimen/padding_dashboard_list" android:paddingRight="@dimen/padding_dashboard_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:columnCount="2">
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="10dp" android:src="@drawable/sprinkler_head_white" app:layout_gravity="center_vertical"/>
+                    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@android:color/white" android:gravity="center_vertical" android:text="@string/dashboard_device_nozzles" app:layout_gravity="fill"/>
+                </android.support.v7.widget.GridLayout>
+                <android.support.v7.widget.GridLayout android:id="@+id/dashboard_drawer_help" android:paddingLeft="@dimen/padding_dashboard_list" android:paddingRight="@dimen/padding_dashboard_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:columnCount="2">
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="10dp" android:src="@drawable/help" app:layout_gravity="center_vertical"/>
+                    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@android:color/white" android:gravity="center_vertical" android:text="@string/dashboard_device_help" app:layout_gravity="fill"/>
+                </android.support.v7.widget.GridLayout>
+                <android.support.v7.widget.GridLayout android:id="@+id/dashboard_drawer_sendfeedback" android:paddingLeft="@dimen/padding_dashboard_list" android:paddingRight="@dimen/padding_dashboard_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:columnCount="2">
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="10dp" android:src="@drawable/feedback" app:layout_gravity="center_vertical"/>
+                    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@android:color/white" android:gravity="center_vertical" android:text="@string/dashboard_device_sendfeedback" app:layout_gravity="fill"/>
+                </android.support.v7.widget.GridLayout>
+                <android.support.v7.widget.GridLayout android:id="@+id/dashboard_drawer_preferences" android:paddingLeft="@dimen/padding_dashboard_list" android:paddingRight="@dimen/padding_dashboard_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:columnCount="2">
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="10dp" android:src="@drawable/preferences" app:layout_gravity="center_vertical"/>
+                    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@android:color/white" android:gravity="center_vertical" android:text="@string/title_activity_settings" app:layout_gravity="fill"/>
+                </android.support.v7.widget.GridLayout>
+                <android.support.v7.widget.GridLayout android:id="@+id/dashboard_drawer_profile" android:paddingLeft="@dimen/padding_dashboard_list" android:paddingRight="@dimen/padding_dashboard_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:onClick="onProfileClick" app:columnCount="2">
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="10dp" android:src="@drawable/profile" app:layout_gravity="center_vertical"/>
+                    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@android:color/white" android:gravity="center_vertical" android:text="@string/dashboard_device_profile" app:layout_gravity="fill"/>
+                </android.support.v7.widget.GridLayout>
+                <android.support.v7.widget.GridLayout android:id="@+id/dashboard_drawer_signout" android:paddingLeft="@dimen/padding_dashboard_list" android:paddingRight="@dimen/padding_dashboard_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:columnCount="2">
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="10dp" android:src="@drawable/exit" app:layout_gravity="center_vertical"/>
+                    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@android:color/white" android:gravity="center_vertical" android:text="@string/dashboard_device_signout" app:layout_gravity="fill"/>
+                </android.support.v7.widget.GridLayout>
+                <android.support.v7.widget.GridLayout android:id="@+id/dashboard_drawer_debug" android:paddingLeft="@dimen/padding_dashboard_list" android:paddingRight="@dimen/padding_dashboard_list" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:columnCount="2">
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="10dp" android:src="@drawable/exit" app:layout_gravity="center_vertical"/>
+                    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@android:color/white" android:gravity="center_vertical" android:text="Debug" app:layout_gravity="fill"/>
+                </android.support.v7.widget.GridLayout>
+            </LinearLayout>
+        </ScrollView>
+        <TextView android:textColor="@android:color/darker_gray" android:gravity="center" android:layout_gravity="bottom" android:background="@android:color/black" android:padding="1dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/app_version_name"/>
+    </LinearLayout>
+</merge>

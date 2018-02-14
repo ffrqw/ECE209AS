@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_height="match_parent" style="@style/InstabugBaseContainer">
+    <RelativeLayout android:layout_marginBottom="0dp" style="@style/InstabugDialogToolbarContainer">
+        <TextView android:id="@+id/instabug_fragment_title" style="@style/InstabugDialogTitle"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/instabug_bottom_sheet_padding" android:paddingTop="0dp" android:paddingRight="@dimen/instabug_bottom_sheet_padding" android:paddingBottom="0dp" style="@style/InstabugDialogContainer">
+        <ListView android:scrollbarStyle="outsideInset" android:id="@+id/instabug_lst_messages" android:paddingTop="@dimen/instabug_container_padding" android:paddingBottom="@dimen/instabug_container_padding" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="0dp" android:listSelector="@android:color/transparent" android:stackFromBottom="true" android:transcriptMode="alwaysScroll" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:dividerHeight="10dp" android:layout_weight="1.0"/>
+        <LinearLayout android:layout_height="wrap_content" style="@style/InstabugDialogComposeMessageContainer">
+            <EditText android:textColor="?attr/instabug_color_foreground" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/edtxt_new_message" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/instabug_str_sending_message_hint" android:maxLines="5" android:minLines="1" android:singleLine="false" android:layout_weight="0.85" android:textCursorDrawable="@null"/>
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/instabug_btn_send" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="0dp" android:layout_height="40dp" android:src="@drawable/instabug_ic_send" android:maxHeight="40dp" android:tint="?attr/instabug_color_foreground" android:layout_weight="0.15"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

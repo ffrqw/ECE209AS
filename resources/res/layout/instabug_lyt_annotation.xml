@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@style/InstabugBaseContainer">
+    <include layout="@layout/instabug_lyt_toolbar"/>
+    <LinearLayout style="@style/InstabugDialogContainer">
+        <include layout="@layout/instabug_lyt_annotation_view"/>
+    </LinearLayout>
+</LinearLayout>

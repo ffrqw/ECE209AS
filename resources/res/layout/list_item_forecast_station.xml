@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/selection_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_uncheck_gray" android:scaleType="center"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_toRightOf="@+id/selection_icon" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/text_size_medium" android:textStyle="bold" android:id="@+id/station_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/rachio_black_30_percent" android:id="@+id/station_description_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/rachio_blue" android:id="@+id/station_description_moreinfo" android:layout_width="0dp" android:layout_height="wrap_content" android:text="More Info" android:layout_weight="1.0"/>
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/rachio_orange" android:id="@+id/station_description_noprecip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No recorded precip data"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

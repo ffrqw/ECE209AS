@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/actionbar"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.rachio.iro.ui.view.settings.SwitchRowWithDescriptionView android:enabled="false" android:id="@+id/device_settings_master_valve_switch" android:layout_width="match_parent" android:layout_height="wrap_content" app:switch_title="@string/device_settings_master_valve_row" app:description="@string/device_settings_master_valve_text"/>
+            <com.rachio.iro.ui.view.settings.SwitchRowWithDescriptionView android:enabled="false" android:id="@+id/device_settings_rain_sensor_switch" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:switch_title="@string/device_settings_rain_sensor_row" app:description="@string/device_settings_rain_sensor_text"/>
+            <com.rachio.iro.ui.view.settings.SwitchRowWithDescriptionView android:enabled="false" android:id="@+id/device_waterhammer" android:layout_width="match_parent" android:layout_height="wrap_content" app:switch_title="Minimize Water hammer" app:description="@string/device_settings_waterhammer_text"/>
+            <com.rachio.iro.ui.view.settings.RowWithCurrentValueAndChevronView android:id="@+id/device_settings_sensor1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/device_settings_sensor1_row"/>
+            <com.rachio.iro.ui.view.settings.RowWithCurrentValueAndChevronView android:enabled="false" android:id="@+id/device_settings_sensor2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/settings_rowsep" android:text="@string/device_settings_sensor2_row"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

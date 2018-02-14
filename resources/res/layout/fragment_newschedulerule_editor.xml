@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@+id/run" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_double" style="@style/ButtonSolidBlue.SquareCorners">
+                <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/padding_general" app:srcCompat="@drawable/runsched"/>
+                    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/text_normallywhite" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Run Schedule"/>
+                </LinearLayout>
+            </FrameLayout>
+            <android.support.v7.widget.SwitchCompat android:id="@+id/enabled" android:text="@string/enabled" style="@style/AppSettingsSwitch"/>
+            <com.rachio.iro.ui.view.settings.RowWithCurrentValueAndChevronView android:id="@+id/name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/nozzleconfiguration_name"/>
+            <TextView android:text="How much to water" style="@style/Rachio.SettingsHeader"/>
+            <com.rachio.iro.ui.view.settings.RowWithCurrentValueAndChevronView android:id="@+id/durations" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Durations"/>
+            <com.rachio.iro.ui.view.settings.RowWithCurrentValueAndChevronView android:id="@+id/zones" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Zones"/>
+            <TextView android:text="WHEN TO WATER" style="@style/Rachio.SettingsHeader"/>
+            <com.rachio.iro.ui.view.settings.RowWithCurrentValueThatExpands android:id="@+id/type" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Schedule Type" android:drawable="@drawable/expander" app:viewundercontrol="@+id/typedescription"/>
+            <FrameLayout android:id="@+id/typedescription" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <TextView android:id="@+id/typedescription_asneeded" android:visibility="invisible" android:text="@string/asneededdescription" style="@style/schedulerulewizard_subdescription"/>
+                <TextView android:id="@+id/typedescription_interval" android:visibility="invisible" android:text="@string/intervaldescription" style="@style/schedulerulewizard_subdescription"/>
+                <TextView android:id="@+id/typedescription_specific" android:visibility="invisible" android:text="@string/specificdaysdescription" style="@style/schedulerulewizard_subdescription"/>
+                <TextView android:id="@+id/typedescription_flex" android:visibility="invisible" android:text="Adjusts daily based on soil moisture." style="@style/schedulerulewizard_subdescription"/>
+            </FrameLayout>
+            <com.rachio.iro.ui.view.settings.RowWithCurrentValueAndChevronView android:id="@+id/willwater" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Will Water"/>
+            <include layout="@layout/merge_schedulerule_howoften_asneeded_controls"/>
+            <include layout="@layout/merge_schedulerule_howoften_interval_controls"/>
+            <include layout="@layout/merge_schedulerule_howoften_weekdays_controls"/>
+            <include layout="@layout/merge_timetowater"/>
+            <include layout="@layout/merge_schedulerule_whentostart"/>
+            <TextView android:text="SMART FEATURES" style="@style/Rachio.SettingsHeader"/>
+            <include layout="@layout/merge_schedulerule_smartwatering"/>
+            <Button android:id="@+id/delete" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_double" android:layout_marginTop="@dimen/padding_triple" android:layout_marginRight="@dimen/padding_double" android:layout_marginBottom="@dimen/padding_double" android:text="Delete Schedule" style="@style/Rachio.Button.Solid.Orange"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

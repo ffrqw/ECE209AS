@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="@dimen/padding_general" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/snippet_gen2_helpicon"/>
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding_general" app:srcCompat="@drawable/icon_gen2_serial"/>
+            <TextView android:text="Enter Serial Number" style="@style/Gen2ProvTitle"/>
+            <TextView android:text="Your serial number is printed on the label on the front of the controller" style="@style/Gen2ProvDescription"/>
+            <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_general" android:layout_marginBottom="@dimen/padding_general">
+                <Spinner android:layout_gravity="center_vertical" android:id="@+id/serialnumber_prefix" style="@style/Gen2ProvSpinner"/>
+                <EditText android:id="@+id/serialnumber_serial_0" style="@style/Gen2ProvSerialNumberDigit">
+                    <requestFocus/>
+                </EditText>
+                <com.rachio.iro.gen2.SerialDigitEditText android:id="@+id/serialnumber_serial_1" style="@style/Gen2ProvSerialNumberDigit"/>
+                <com.rachio.iro.gen2.SerialDigitEditText android:id="@+id/serialnumber_serial_2" style="@style/Gen2ProvSerialNumberDigit"/>
+                <com.rachio.iro.gen2.SerialDigitEditText android:id="@+id/serialnumber_serial_3" style="@style/Gen2ProvSerialNumberDigit"/>
+                <com.rachio.iro.gen2.SerialDigitEditText android:id="@+id/serialnumber_serial_4" style="@style/Gen2ProvSerialNumberDigit"/>
+                <com.rachio.iro.gen2.SerialDigitEditText android:id="@+id/serialnumber_serial_5" style="@style/Gen2ProvSerialNumberDigit"/>
+                <com.rachio.iro.gen2.SerialDigitEditText android:id="@+id/serialnumber_serial_6" android:layout_marginRight="0dp" style="@style/Gen2ProvSerialNumberDigit"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:enabled="false" android:id="@+id/serialnumber_continue" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/gen2prov_continue"/>
+</LinearLayout>

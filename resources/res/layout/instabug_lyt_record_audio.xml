@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="left" android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/instabug_options_invocation" android:background="?attr/instabug_color_background" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="32dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textColor="?attr/instabug_color_foreground" android:gravity="center" android:id="@+id/instabug_txt_recording_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/instabug_str_hold_to_record"/>
+    <TextView android:textSize="14sp" android:textColor="?attr/instabug_color_foreground" android:gravity="center" android:id="@+id/instabug_txt_timer" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:layout_gravity="center" android:id="@+id/instabug_btn_record_audio" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="32dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp">
+        <ImageView android:layout_gravity="center" android:id="@+id/instabug_bk_record_audio" android:layout_width="64dp" android:layout_height="64dp" android:src="@drawable/instabug_record_default_bk"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/instabug_img_record_audio" android:layout_width="32dp" android:layout_height="32dp" android:src="?attr/instabug_audio_icon"/>
+    </FrameLayout>
+</LinearLayout>

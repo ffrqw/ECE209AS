@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="add_schedule_day_labels">
+        <item>Any Day</item>
+        <item>Every Sunday</item>
+        <item>Every Monday</item>
+        <item>Every Tuesday</item>
+        <item>Every Wednesday</item>
+        <item>Every Thursday</item>
+        <item>Every Friday</item>
+        <item>Every Saturday</item>
+    </array>
+    <array name="add_schedule_repeat_labels">
+        <item>On Odd Days</item>
+        <item>On Even Days</item>
+        <item>Every Day</item>
+        <item>Every 2 Days</item>
+        <item>Every 3 Days</item>
+        <item>Every 4 Days</item>
+        <item>Every 5 Days</item>
+        <item>Every 6 Days</item>
+        <item>Every 7 Days (1 Week)</item>
+        <item>Every 8 Days</item>
+        <item>Every 9 Days</item>
+        <item>Every 10 Days</item>
+        <item>Every 11 Days</item>
+        <item>Every 12 Days</item>
+        <item>Every 13 Days</item>
+        <item>Every 14 Days (2 Weeks)</item>
+        <item>Every 15 Days</item>
+        <item>Every 16 Days</item>
+        <item>Every 17 Days</item>
+        <item>Every 18 Days</item>
+        <item>Every 19 Days</item>
+        <item>Every 20 Days</item>
+        <item>Every 21 Days (3 Weeks)</item>
+    </array>
+    <array name="freezedelaythreshold_imperial">
+        <item>Freezing</item>
+        <item>33°F</item>
+        <item>34°F</item>
+        <item>35°F</item>
+        <item>36°F</item>
+        <item>37°F</item>
+        <item>38°F</item>
+        <item>39°F</item>
+        <item>40°F</item>
+        <item>41°F</item>
+        <item>42°F</item>
+        <item>43°F</item>
+        <item>44°F</item>
+        <item>45°F</item>
+    </array>
+    <array name="freezedelaythreshold_metric">
+        <item>Freezing</item>
+        <item>1°C</item>
+        <item>2°C</item>
+        <item>3°C</item>
+        <item>4°C</item>
+        <item>5°C</item>
+        <item>6°C</item>
+        <item>7°C</item>
+    </array>
+    <array name="gen2serialnumberprefixes_dev">
+        <item>D0</item>
+        <item>DR</item>
+        <item>D1</item>
+    </array>
+    <array name="gen2serialnumberprefixes_prod">
+        <item>CR</item>
+        <item>VR</item>
+    </array>
+    <array name="noyes">
+        <item>@string/no</item>
+        <item>@string/yes</item>
+    </array>
+    <array name="raindelaydurations">
+        <item>24 Hours</item>
+        <item>2 Days</item>
+        <item>3 Days</item>
+        <item>4 Days</item>
+        <item>5 Days</item>
+        <item>6 Days</item>
+        <item>1 Week</item>
+        <item>No Rain Delay</item>
+    </array>
+    <array name="raindelaythresholds_imperial">
+        <item>1/16 in.</item>
+        <item>1/8 in.</item>
+        <item>1/4 in.</item>
+        <item>1/2 in.</item>
+        <item>3/4 in.</item>
+        <item>1 in.</item>
+    </array>
+    <array name="raindelaythresholds_metric">
+        <item>1.6 mm</item>
+        <item>3 mm</item>
+        <item>6 mm</item>
+        <item>13 mm</item>
+        <item>19 mm</item>
+        <item>25 mm</item>
+    </array>
+    <array name="schedule_afterbefore">
+        <item>Start After</item>
+        <item>End Before</item>
+        <item>Start After</item>
+    </array>
+    <array name="schedule_delayduration">
+        <item>Once</item>
+        <item>12 Hours</item>
+        <item>1 Day</item>
+        <item>2 Days</item>
+        <item>3 Days</item>
+        <item>4 Days</item>
+        <item>5 Days</item>
+        <item>6 Days</item>
+        <item>7 Days</item>
+    </array>
+    <array name="schedulerulewizard_daystowater">
+        <item>As Needed</item>
+        <item>On an Interval</item>
+        <item>Specific Days</item>
+    </array>
+    <array name="schedulerulewizard_daystowater_flex">
+        <item>Any Day</item>
+        <item>On an Interval</item>
+        <item>Specific Days</item>
+    </array>
+    <array name="schedulerulewizard_fixedtypenames">
+        <item>Flexible Monthly</item>
+        <item>Fixed Interval</item>
+        <item>Fixed Days</item>
+    </array>
+    <array name="securitytypes">
+        <item>No Security</item>
+        <item>WEP</item>
+        <item>WPA2</item>
+        <item>WPA/WPA2 Mixed</item>
+    </array>
+    <array name="securitytypes_ints">
+        <item>@null</item>
+        <item>1</item>
+        <item>4</item>
+        <item>5</item>
+    </array>
+    <array name="sensortypes">
+        <item>Rain</item>
+        <item>Flow</item>
+    </array>
+    <array name="zone_help_options">
+        <item>Try Again</item>
+        <item>Skip This Zone</item>
+        <item>Disable This Zone</item>
+    </array>
+</resources>

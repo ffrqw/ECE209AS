@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/newgrey" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:text="@string/startdateselect" style="@style/schedulerulewizard_settingsdescription"/>
+        </LinearLayout>
+    </ScrollView>
+    <DatePicker android:layout_gravity="center" android:id="@+id/datepicker" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

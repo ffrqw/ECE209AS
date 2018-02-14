@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/actionbar"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding_general" app:cardCornerRadius="0dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="@style/Rachio.TextAppearance.Medium" android:textColor="@color/rachio_blue" android:padding="@dimen/padding_double" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Device Details"/>
+                    <TextView android:text="Status" style="@style/prodevicedetails_row_top"/>
+                    <TextView android:id="@+id/prodevicedetails_status" android:textAllCaps="true" style="@style/prodevicedetails_row_bottom"/>
+                    <TextView android:text="Owner" style="@style/prodevicedetails_row_top"/>
+                    <TextView android:id="@+id/prodevicedetails_owner" style="@style/prodevicedetails_row_bottom"/>
+                    <TextView android:text="Location" style="@style/prodevicedetails_row_top"/>
+                    <TextView android:id="@+id/prodevicedetails_location" style="@style/prodevicedetails_row_bottom"/>
+                    <TextView android:text="Device Name" style="@style/prodevicedetails_row_top"/>
+                    <TextView android:id="@+id/prodevicedetails_name" style="@style/prodevicedetails_row_bottom"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding_general" app:cardCornerRadius="0dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/rachio_blue" android:text="Actions" style="@style/prodevicedetails_actionrow"/>
+                    <View android:background="@color/rachio_grey" android:layout_width="match_parent" android:layout_height="1dp"/>
+                    <TextView android:id="@+id/prodevicedetails_selectdevice" android:text="Switch to the Device" style="@style/prodevicedetails_actionrow"/>
+                    <View android:background="@color/rachio_grey" android:layout_width="match_parent" android:layout_height="1dp"/>
+                    <TextView android:enabled="true" android:id="@+id/prodevicedetails_launchmaps" android:text="Launch Location in Maps" style="@style/prodevicedetails_actionrow"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

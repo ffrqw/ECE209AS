@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/card_corner_radius" app:cardElevation="@dimen/card_elevation" app:cardUseCompatPadding="true" app:cardPreventCornerOverlap="false">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/view_card_device_merge_header"/>
+        <RelativeLayout android:id="@+id/card_content" android:paddingBottom="@dimen/card_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@+id/watering_history_item" layout="@layout/widget_watering_history_item"/>
+            <TextView android:textColor="@color/rachio_blue" android:id="@+id/watering_details_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="70dp" android:text="Details" android:layout_below="@+id/watering_history_item" style="@style/Rachio.TextAppearance.Card.Subtitle"/>
+            <TextView android:textColor="@color/rachio_blue" android:id="@+id/watering_stop_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:text="Stop" android:layout_below="@+id/watering_history_item" android:layout_alignParentRight="true" style="@style/Rachio.TextAppearance.Card.Subtitle"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/details" android:background="@color/rachio_grey" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

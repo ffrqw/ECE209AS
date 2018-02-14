@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_gravity="center_horizontal" android:id="@+id/view_intervalpicker_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_general" android:layout_marginBottom="@dimen/padding_general"/>
+    <android.support.v7.widget.GridLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" app:columnCount="7">
+        <TextView android:id="@+id/view_intervalpicker_choice_0" android:layout_marginRight="2dp" android:layout_marginBottom="2dp" android:text="1" style="@style/intervalpicker_day"/>
+        <TextView android:id="@+id/view_intervalpicker_choice_1" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_marginBottom="2dp" android:text="2" style="@style/intervalpicker_day"/>
+        <TextView android:id="@+id/view_intervalpicker_choice_2" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_marginBottom="2dp" android:text="3" style="@style/intervalpicker_day"/>
+        <TextView android:id="@+id/view_intervalpicker_choice_3" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_marginBottom="2dp" android:text="4" style="@style/intervalpicker_day"/>
+        <TextView android:id="@+id/view_intervalpicker_choice_4" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_marginBottom="2dp" android:text="5" style="@style/intervalpicker_day"/>
+        <TextView android:id="@+id/view_intervalpicker_choice_5" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_marginBottom="2dp" android:text="6" style="@style/intervalpicker_day"/>
+        <TextView android:id="@+id/view_intervalpicker_choice_6" android:layout_marginLeft="2dp" android:layout_marginBottom="2dp" android:text="7" style="@style/intervalpicker_day"/>
+        <TextView android:id="@+id/view_intervalpicker_choice_7" android:layout_marginTop="2dp" android:layout_marginRight="2dp" android:layout_marginBottom="2dp" android:text="8" style="@style/intervalpicker_day"/>
+        <TextView android:id="@+id/view_intervalpicker_choice_8" android:layout_margin="2dp" android:text="9" style="@style/intervalpicker_day"/>
+        <TextView android:id="@+id/view_intervalpicker_choice_9" android:layout_margin="2dp" android:text="10" style="@style/intervalpicker_day"/>
+        <TextView android:id="@+id/view_intervalpicker_choice_10" android:layout_margin="2dp" android:text="11" style="@style/intervalpicker_day"/>
+        <TextView android:id="@+id/view_intervalpicker_choice_11" android:layout_margin="2dp" android:text="12" style="@style/intervalpicker_day"/>
+        <TextView android:id="@+id/view_intervalpicker_choice_12" android:layout_margin="2dp" android:text="13" style="@style/intervalpicker_day"/>
+        <TextView android:id="@+id/view_intervalpicker_choice_13" android:layout_marginLeft="2dp" android:layout_marginTop="2dp" android:layout_marginBottom="2dp" android:text="14" style="@style/intervalpicker_day"/>
+        <TextView android:id="@+id/view_intervalpicker_choice_14" android:layout_marginTop="2dp" android:layout_marginRight="2dp" android:text="15" style="@style/intervalpicker_day"/>
+        <TextView android:id="@+id/view_intervalpicker_choice_15" android:layout_marginLeft="2dp" android:layout_marginTop="2dp" android:layout_marginRight="2dp" android:text="16" style="@style/intervalpicker_day"/>
+        <TextView android:id="@+id/view_intervalpicker_choice_16" android:layout_marginLeft="2dp" android:layout_marginTop="2dp" android:layout_marginRight="2dp" android:text="17" style="@style/intervalpicker_day"/>
+        <TextView android:id="@+id/view_intervalpicker_choice_17" android:layout_marginLeft="2dp" android:layout_marginTop="2dp" android:layout_marginRight="2dp" android:text="18" style="@style/intervalpicker_day"/>
+        <TextView android:id="@+id/view_intervalpicker_choice_18" android:layout_marginLeft="2dp" android:layout_marginTop="2dp" android:layout_marginRight="2dp" android:text="19" style="@style/intervalpicker_day"/>
+        <TextView android:id="@+id/view_intervalpicker_choice_19" android:layout_marginLeft="2dp" android:layout_marginTop="2dp" android:layout_marginRight="2dp" android:text="20" style="@style/intervalpicker_day"/>
+        <TextView android:id="@+id/view_intervalpicker_choice_20" android:layout_marginLeft="2dp" android:layout_marginTop="2dp" android:text="21" style="@style/intervalpicker_day"/>
+    </android.support.v7.widget.GridLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+        <TextView android:id="@+id/view_intervalpicker_choice_21" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2dp" android:text="Odd
+Days" style="@style/intervalpicker_oddoreven"/>
+        <TextView android:id="@+id/view_intervalpicker_choice_22" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:text="Even
+Days" style="@style/intervalpicker_oddoreven"/>
+    </LinearLayout>
+</merge>

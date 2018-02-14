@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:state_pressed="true" android:color="@color/rachio_dark_grey"/>
+    <item android:color="@color/rachio_grey" app:state_schedule_differentmonth="true"/>
+    <item android:color="@color/rachio_white" app:state_schedule_today="true"/>
+    <item android:color="@color/schedule_text_color"/>
+</selector>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/actionbar"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding_general">
+        <com.rachio.iro.ui.view.reports.MonthPicker android:layout_gravity="center_horizontal" android:id="@+id/reports_detail_month" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.rachio.iro.ui.view.reports.YearPicker android:layout_gravity="center_horizontal" android:id="@+id/reports_detail_year" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding_general">
+        <TextView android:layout_gravity="center_vertical" android:id="@+id/reports_detail_used" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Used"/>
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="30dp" android:layout_height="15dp" android:layout_marginLeft="@dimen/padding_general" android:layout_marginRight="@dimen/padding_general" android:src="@drawable/reports_key_use"/>
+        <TextView android:layout_gravity="center_vertical" android:id="@+id/reports_detail_saved" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Saved"/>
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="30dp" android:layout_height="15dp" android:layout_marginLeft="@dimen/padding_general" android:src="@drawable/reports_key_saved"/>
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.0">
+        <FrameLayout android:id="@+id/reports_detail_chart_holder" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <fragment android:id="@+id/reports_detail_chart" android:layout_width="match_parent" android:layout_height="match_parent" class="com.rachio.iro.ui.fragment.NestableChartFragment"/>
+        </FrameLayout>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/reports_detail_progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <TextView android:textColor="@color/rachio_grey" android:gravity="center" android:id="@+id/reports_detail_disclaimer" android:padding="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_general" android:text="@string/reports_disclaimer"/>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.instabug.library.view.CircularImageView android:layout_gravity="bottom" android:id="@+id/instabug_img_message_sender" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/instabug_ic_avatar" android:scaleType="centerCrop"/>
+        <FrameLayout android:layout_gravity="bottom" android:id="@+id/instabug_audio_attachment" android:background="@drawable/chat_bubble_received" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="-10dp">
+            <ImageView android:id="@+id/instabug_img_audio_attachment" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4dp" android:src="@drawable/instabug_img_audio_placeholder" android:scaleType="fitXY"/>
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="1dp">
+                <ImageView android:layout_gravity="center" android:id="@+id/instabug_btn_play_audio" android:background="@drawable/instabug_bk_white_stroke" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/instabug_ic_play" android:tint="?attr/instabug_color_foreground"/>
+                <TextView android:textSize="14sp" android:textStyle="bold" android:gravity="center" android:id="@+id/instabug_txt_attachment_length" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/instabug_date_text_size" android:textColor="@color/instabug_text_color_grey" android:gravity="start" android:id="@+id/instabug_txt_message_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp"/>
+    </LinearLayout>
+</LinearLayout>

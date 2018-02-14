@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:padding="0dp" style="@style/welcomefrag">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/Rachio.TextAppearance.Welcome.Headline.Massive" android:gravity="center" android:paddingLeft="@dimen/padding_quad" android:paddingRight="@dimen/padding_quad" android:paddingBottom="@dimen/padding_half" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Welcome."/>
+        <TextView android:textAppearance="@style/Rachio.TextAppearance.Welcome.Description" android:gravity="center" android:paddingLeft="@dimen/padding_quad" android:paddingTop="@dimen/padding_half" android:paddingRight="@dimen/padding_quad" android:paddingBottom="@dimen/padding_double" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Let's cover the basics of your new Rachio Smart Sprinkler Controller."/>
+        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/welcome_house" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/rachio_black_90_percent" android:padding="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="50dp" android:src="@drawable/demo_disclosure_icon"/>
+        <TextView android:textSize="40sp" android:textColor="@color/rachio_blue" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="Demo Mode"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/rachio_white" android:gravity="center" android:autoLink="web" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="50dp" android:text="This version of the Rachio App is for demonstration purposes. Some actions will not be supported fully. For more information on the app and features go to www.rachio.com/app"/>
+        <Button android:id="@+id/demo_continue" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Continue" style="@style/ButtonOutlineBlue"/>
+    </LinearLayout>
+</FrameLayout>

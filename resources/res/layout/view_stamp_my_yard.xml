@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rachio.iro.ui.view.MyYardStampView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/background_dropshadow_square" android:paddingLeft="3dp" android:paddingTop="0dp" android:paddingRight="3dp" android:paddingBottom="10dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="168dp" android:layout_margin="4dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.5">
+        <ImageView android:id="@+id/yard_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+        <View android:background="@drawable/gradient_vertical_black" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TextView android:textSize="@dimen/text_size_large" android:textColor="@color/rachio_white" android:gravity="center" android:id="@+id/yard_name_and_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <View android:background="@color/rachio_blue" android:layout_width="match_parent" android:layout_height="3dp"/>
+    <LinearLayout android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.5">
+        <RelativeLayout android:id="@+id/yard_description_left_container" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <LinearLayout android:id="@+id/yard_watering_now_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textColor="@color/rachio_blue" android:gravity="center" android:id="@+id/yard_watering_now_text" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/yard_description_left_icon" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginTop="-10dp" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="12dp" android:gravity="center" android:layout_gravity="center" android:id="@+id/yard_description_left_text" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/yard_description_left_icon"/>
+        </RelativeLayout>
+        <View android:id="@+id/yard_description_divider" android:background="@color/rachio_black_10_percent" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginTop="8dp" android:layout_marginBottom="0dp"/>
+        <RelativeLayout android:id="@+id/yard_description_right_container" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <ImageView android:id="@+id/yard_description_right_icon" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginTop="-10dp" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="12dp" android:gravity="center" android:layout_gravity="center" android:id="@+id/yard_description_right_text" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/yard_description_right_icon"/>
+        </RelativeLayout>
+    </LinearLayout>
+</com.rachio.iro.ui.view.MyYardStampView>

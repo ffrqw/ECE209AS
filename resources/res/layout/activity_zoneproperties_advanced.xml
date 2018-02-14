@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/actionbar"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:text="Area" style="@style/Rachio.SettingsHeader"/>
+            <LinearLayout android:orientation="horizontal" style="@style/Rachio.SettingsRow">
+                <EditText android:layout_gravity="center_vertical" android:id="@+id/zoneproperties_area" android:padding="0dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/padding_general" android:layout_weight="1.0" android:inputType="numberDecimal"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_gravity="center_vertical" android:id="@+id/zoneproperties_area_units" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <TextView android:text="Available Water" style="@style/Rachio.SettingsHeader"/>
+            <LinearLayout android:orientation="horizontal" style="@style/Rachio.SettingsRow">
+                <EditText android:layout_gravity="center_vertical" android:id="@+id/zoneproperties_availablewater" android:padding="0dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/padding_general" android:layout_weight="1.0" android:inputType="numberDecimal"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_gravity="center_vertical" android:id="@+id/zoneproperties_availablewater_units" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <TextView android:text="Root Depth" style="@style/Rachio.SettingsHeader"/>
+            <LinearLayout android:orientation="horizontal" style="@style/Rachio.SettingsRow">
+                <EditText android:layout_gravity="center_vertical" android:id="@+id/zoneproperties_rootdepth" android:padding="0dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/padding_general" android:layout_weight="1.0" android:inputType="numberDecimal"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_gravity="center_vertical" android:id="@+id/zoneproperties_rootdepth_units" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <TextView android:text="Allowed Depletion" style="@style/Rachio.SettingsHeader"/>
+            <LinearLayout android:orientation="horizontal" style="@style/Rachio.SettingsRow">
+                <SeekBar android:layout_gravity="center_vertical" android:id="@+id/zoneproperties_advanced_allowdepletion" android:layout_width="0dp" android:layout_height="wrap_content" android:max="100" android:layout_weight="1.0"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_gravity="center_vertical" android:id="@+id/zoneproperties_advanced_allowdepletion_value" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <TextView android:text="Efficiency" style="@style/Rachio.SettingsHeader"/>
+            <LinearLayout android:orientation="horizontal" style="@style/Rachio.SettingsRow">
+                <SeekBar android:layout_gravity="center_vertical" android:id="@+id/zoneproperties_advanced_efficiency" android:layout_width="0dp" android:layout_height="wrap_content" android:max="100" android:layout_weight="1.0"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_gravity="center_vertical" android:id="@+id/zoneproperties_advanced_efficiency_value" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <TextView android:text="Crop Coefficient" style="@style/Rachio.SettingsHeader"/>
+            <LinearLayout android:orientation="horizontal" style="@style/Rachio.SettingsRow">
+                <SeekBar android:layout_gravity="center_vertical" android:id="@+id/zoneproperties_advanced_cropcoefficient" android:layout_width="0dp" android:layout_height="wrap_content" android:max="150" android:layout_weight="1.0"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_gravity="center_vertical" android:id="@+id/zoneproperties_advanced_cropcoefficient_value" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:id="@+id/zoneproperties_advanced_reset" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="USE DEFAULT VALUES" style="@style/ButtonSolidBlue.SquareCorners"/>
+</LinearLayout>

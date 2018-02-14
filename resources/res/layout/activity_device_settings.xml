@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/actionbar"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/device_settings_namelocation" style="@style/Rachio.SettingsRow">
+                <TextView android:textAppearance="@style/Rachio.TextAppearance.Medium" android:textColor="@color/rachio_black" android:ellipsize="end" android:id="@+id/device_settings_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+                <TextView android:textAppearance="@style/Rachio.TextAppearance.Small" android:ellipsize="end" android:id="@+id/device_settings_location" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+            </LinearLayout>
+            <android.support.v7.widget.SwitchCompat android:id="@+id/device_settings_sleep_switch" android:text="@string/device_settings_standby" app:viewundercontrol="@+id/device_settings_sleep_description" style="@style/AppSettingsSwitch"/>
+            <TextView android:id="@+id/device_settings_sleep_description" android:text="When Standby Mode is ON. all scheduled watering times will be skipped until Standby Mode is switched OFF. Zones can still be watered using the manual run controls." style="@style/schedulerulewizard_subdescription"/>
+            <com.rachio.iro.ui.view.settings.RowWithChevronView android:id="@+id/device_settings_share" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/device_settings_share"/>
+            <com.rachio.iro.ui.view.settings.RowWithChevronView android:id="@+id/device_settings_update_wifi_row" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/device_settings_update_wifi_row"/>
+            <com.rachio.iro.ui.view.settings.RowWithChevronView android:id="@+id/device_settings_advanced" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/device_settings_advanced"/>
+            <com.rachio.iro.ui.view.settings.RowWithCurrentValueAndChevronView android:id="@+id/device_serial_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Serial Number" android:drawable="@null"/>
+            <com.rachio.iro.ui.view.settings.RowWithCurrentValueAndChevronView android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/device_mac" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MAC Address" android:drawable="@null"/>
+            <TextView android:id="@+id/device_settings_delete" android:text="Delete Device" style="@style/DeleteRow"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

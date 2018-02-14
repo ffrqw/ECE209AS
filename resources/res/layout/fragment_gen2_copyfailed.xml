@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/snippet_gen2_helpicon"/>
+    <ImageView android:layout_gravity="center" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_content_copy_48px"/>
+    <TextView android:text="Copy Failed" style="@style/Gen2ProvTitle"/>
+    <TextView android:text="It looks like something went wrong. We were unabled to copy your settings from My Rachio." style="@style/Gen2ProvDescription"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.0"/>
+    <Button android:id="@+id/copyfailed_tryagain" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding_general" android:text="Try Again" style="@style/ButtonOutlineBlue"/>
+    <Button android:id="@+id/copyfailed_continue" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Continue to Setup" style="@style/ButtonOutlineGreen"/>
+</LinearLayout>

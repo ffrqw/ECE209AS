@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/snippet_gen2_helpicon"/>
+    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding_general" android:src="@drawable/device_gen2"/>
+    <TextView android:text="Master Valve or Pump" style="@style/Gen2ProvTitle"/>
+    <TextView android:text="Is your controller connected to a master valve or pump start relay?" style="@style/Gen2ProvTitle"/>
+    <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35dp">
+        <Spinner android:layout_gravity="center_vertical" android:id="@+id/mastervalve_havemastervalve" style="@style/Gen2ProvSpinner"/>
+        <TextView android:layout_gravity="right|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableRight="@drawable/abc_spinner_mtrl_am_alpha"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.0"/>
+    <Button android:id="@+id/mastervalve_continue" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/gen2prov_continue" style="@style/ButtonOutlineGreen"/>
+</LinearLayout>

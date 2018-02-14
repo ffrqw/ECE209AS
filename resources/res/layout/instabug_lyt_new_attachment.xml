@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/instabug_options_invocation" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/InstabugBottomSheetWithoutTitleContainer">
+    <LinearLayout android:id="@+id/instabug_btn_add_image" style="@style/InstabugBottomSheetItemContainer">
+        <ImageView android:src="?attr/instabug_gallery_icon" style="@style/InstabugBottomSheetItemImage"/>
+        <TextView android:id="@+id/instabug_btn_add_image_text" android:text="@string/instabug_str_add_photo" style="@style/InstabugBottomSheetItemText"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/instabug_btn_take_screenshot" style="@style/InstabugBottomSheetItemContainer">
+        <ImageView android:src="?attr/instabug_add_screenshot_icon" style="@style/InstabugBottomSheetItemImage"/>
+        <TextView android:id="@+id/instabug_btn_add_screenshot_text" android:text="@string/instabug_str_take_screenshot" style="@style/InstabugBottomSheetItemText"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/instabug_btn_add_audio" style="@style/InstabugBottomSheetItemContainer">
+        <ImageView android:src="?attr/instabug_audio_icon" style="@style/InstabugBottomSheetItemImage"/>
+        <TextView android:id="@+id/instabug_btn_add_audio_text" android:text="@string/instabug_str_record_audio" style="@style/InstabugBottomSheetItemText"/>
+    </LinearLayout>
+</LinearLayout>

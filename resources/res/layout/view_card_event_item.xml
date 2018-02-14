@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/event_history_item">
+    <ImageView android:id="@+id/event_status_icon" android:layout_width="54dp" android:layout_height="46dp" android:layout_marginRight="@dimen/card_padding" android:scaleType="fitCenter"/>
+    <TextView android:id="@+id/event_timestamp_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/event_status_icon" style="@style/Rachio.TextAppearance.EventCard.Subtitle"/>
+    <TextView android:id="@+id/event_description_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/card_text_margin" android:layout_toRightOf="@+id/event_status_icon" android:layout_below="@+id/event_timestamp_text" style="@style/Rachio.TextAppearance.EventCard"/>
+    <TextView android:textColor="@color/rachio_blue" android:id="@+id/event_actionable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/card_footer_margin" android:layout_marginRight="16dp" android:layout_below="@+id/event_description_text" android:layout_alignParentRight="true" style="@style/Rachio.TextAppearance.Card.Subtitle"/>
+    <View android:id="@+id/event_card_divider" android:background="@color/rachio_light_grey" android:paddingTop="@dimen/card_padding" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/card_padding" android:layout_below="@+id/event_actionable"/>
+</merge>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="236" android:versionName="2.8–236" package="com.rachio.iro" platformBuildVersionCode="25" platformBuildVersionName="7.1.1">
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="23"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-feature android:name="android.hardware.wifi"/>
+    <uses-feature android:glEsVersion="20000" android:required="true"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-permission android:name="com.rachio.iro.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <permission android:name="com.rachio.iro.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <meta-data android:name="android.support.VERSION" android:value="25.3.1"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <application android:theme="@style/Rachio" android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:name="com.rachio.iro.IroApplication" android:allowBackup="true" android:hardwareAccelerated="true" android:largeHeap="true">
+        <service android:name="com.rachio.iro.cloud.PushPull" android:enabled="true"/>
+        <activity android:theme="@style/Rachio.Activity.SplashScreen" android:name="com.rachio.iro.ui.activity.SplashScreenActivity" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="orientation|screenSize" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Rachio.Activity.FullScreen.Dark" android:label="@string/title_activity_login" android:name="com.rachio.iro.ui.activity.user.LoginActivity" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateVisible|adjustResize"/>
+        <activity android:theme="@style/Rachio.Activity.FullScreen.Dark" android:label="@string/title_activity_registration" android:name="com.rachio.iro.ui.activity.user.RegistrationActivity" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateVisible|adjustResize"/>
+        <activity android:theme="@style/Rachio.Activity.FullScreen.Dark" android:label="@string/title_activity_passwordreset" android:name="com.rachio.iro.ui.activity.user.PasswordResetActivity" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateVisible|adjustResize"/>
+        <activity android:theme="@style/Rachio.Activity.SplashScreen" android:name="com.rachio.iro.ui.activity.user.LoginProgressActivity" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Rachio.Activity.FullScreen.Welcome" android:name="com.rachio.iro.ui.welcome.WelcomeActivity" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Rachio.Activity.ActionBar" android:label="@string/title_activity_weatherstations" android:name="com.rachio.iro.ui.activity.device.ChooseWeatherStationActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Rachio.Activity.ActionBar" android:name="com.rachio.iro.ui.activity.DashboardActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Rachio.Activity.FullScreen.RemoteControl" android:label="Remote Control" android:name="com.rachio.iro.ui.activity.device.RemoteControlActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Rachio.Activity.ActionBar" android:name="com.rachio.iro.ui.newschedulerulepath.activity.ViewScheduleActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Rachio.Activity.Settings" android:label="@string/editschedule" android:name="com.rachio.iro.ui.newschedulerulepath.activity.EditScheduleRuleActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Rachio.Activity.Settings.ScheduleRuleWizard" android:label="@string/newschedule" android:name="com.rachio.iro.ui.newschedulerulepath.activity.ScheduleRuleWizardActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/Rachio.Activity.Settings" android:label="@string/title_activity_device_settings" android:name="com.rachio.iro.ui.activity.device.DeviceSettingsActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize" android:parentActivityName="com.rachio.iro.ui.activity.DashboardActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.activity.DashboardActivity"/>
+        </activity>
+        <activity android:theme="@style/Rachio.Activity.Settings" android:label="@string/title_activity_device_name_location" android:name="com.rachio.iro.ui.activity.device.DeviceNameAndLocationActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize" android:parentActivityName="com.rachio.iro.ui.activity.DashboardActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.activity.DashboardActivity"/>
+        </activity>
+        <activity android:theme="@style/Rachio.Activity.Settings" android:label="@string/title_activity_device_settings_advanced" android:name="com.rachio.iro.ui.activity.device.AdvancedDeviceSettingsActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Rachio.Activity.Settings" android:label="@string/title_activity_zone_details" android:name="com.rachio.iro.ui.activity.zone.ZoneDetailsActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize" android:parentActivityName="com.rachio.iro.ui.activity.DashboardActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.activity.DashboardActivity"/>
+        </activity>
+        <activity android:theme="@style/Rachio.Activity.Settings" android:label="@string/title_activity_device_settings_share" android:name="com.rachio.iro.ui.activity.device.ShareActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Rachio.Activity.Settings" android:label="@string/title_activity_nozzles" android:name="com.rachio.iro.ui.activity.user.MyNozzlesActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Rachio.Activity.Settings" android:label="@string/title_activity_sensorconfiguration" android:name="com.rachio.iro.ui.activity.device.SensorConfigurationActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Rachio.Activity.FullScreen.Dark" android:label="@string/title_zone_help" android:name="com.rachio.iro.ui.zonesetup.ZoneHelpActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize" android:parentActivityName="com.rachio.iro.ui.activity.device.DeviceSettingsActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.activity.device.DeviceSettingsActivity"/>
+        </activity>
+        <activity android:theme="@style/Rachio.Activity.ActionBar" android:label="@string/title_activity_help" android:name="com.rachio.iro.ui.activity.HelpActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Rachio.Activity.ActionBar" android:label="@string/title_activity_history" android:name="com.rachio.iro.ui.activity.device.HistoryActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Rachio.Activity.Settings" android:label="@string/title_activity_profile" android:name="com.rachio.iro.ui.activity.user.ProfileActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Rachio.Activity.Settings" android:label="@string/title_activity_changepassword" android:name="com.rachio.iro.ui.activity.user.ChangePasswordActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Rachio.Activity.Settings" android:label="@string/title_activity_settings" android:name="com.rachio.iro.ui.activity.user.SettingsActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Rachio.Activity.White" android:label="@string/title_activity_reports" android:name="com.rachio.iro.ui.activity.reporting.ReportDetailActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Rachio.Activity.Settings.Green" android:label="@string/zone_details_type_label" android:name="com.rachio.iro.ui.activity.zone.CropListActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Rachio.Activity.Settings.Orange" android:label="@string/zone_details_soil_label" android:name="com.rachio.iro.ui.activity.zone.SoilListActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Rachio.Activity.Settings.Yellow" android:label="@string/zone_details_shade_label" android:name="com.rachio.iro.ui.activity.zone.ShadeListActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Rachio.Activity.Settings" android:label="@string/zone_details_nozzle_label" android:name="com.rachio.iro.ui.activity.zone.NozzleListActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Rachio.Activity.Settings.Aqua" android:label="@string/zone_details_slope_label" android:name="com.rachio.iro.ui.activity.zone.SlopeListActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Rachio.Activity.Settings" android:label="@string/zone_details_nozzle_label" android:name="com.rachio.iro.ui.activity.zone.NozzleConfigurationActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Rachio.Activity.Settings" android:label="@string/title_activity_zone_advanced" android:name="com.rachio.iro.ui.activity.zone.AdvancedZonePropertiesActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Rachio.Activity.Settings" android:label="@string/title_activity_zone_moisture_level" android:name="com.rachio.iro.ui.activity.zone.ZoneMoistureLevelActivity"/>
+        <activity android:theme="@style/Rachio.Activity.White" android:name="com.rachio.iro.ui.activity.DebugActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Rachio.Activity.FullScreen.Dark" android:name="com.rachio.iro.ui.activity.device.AddDeviceTypeActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Rachio.Activity.FullScreen.Gen2Prov" android:name="com.rachio.iro.gen2.ProvActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <service android:name="com.rachio.iro.gen2.MrvlProvService"/>
+        <activity android:theme="@style/Rachio.Activity.FullScreen.Gen2Prov" android:name="com.rachio.iro.gen2.WifiUpdateButtonsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/Rachio.Activity.FullScreen.Dark" android:name="com.rachio.iro.ui.activity.BlinkUpActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Rachio.Activity.FullScreen.Dark" android:name="com.rachio.iro.ui.activity.device.NoDeviceActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Rachio.Activity.FullScreen.Dark" android:name="com.rachio.iro.ui.activity.BlinkupCompleteActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.electricimp.blinkup.WifiSelectActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.electricimp.blinkup.BlinkupGLActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.electricimp.blinkup.WifiActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.electricimp.blinkup.WPSActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.electricimp.blinkup.ClearWifiActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.electricimp.blinkup.InterstitialActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Rachio.Activity.Settings" android:label="Devices" android:name="com.rachio.iro.ui.prodevicelist.activity.ProDeviceListActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Rachio.Activity.Settings" android:label="" android:name="com.rachio.iro.ui.prodevicelist.activity.ProDeviceDetailsActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="88ef69a1e80265f87bad37bad6a0d30aa154b353"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyDNpUpp5O_04VFvUbtJDbpLQqHzy2EdoeY"/>
+        <receiver android:name="com.rachio.iro.BootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/Rachio.Activity.FullScreen.Dark" android:name="com.soundcloud.android.crop.CropImageActivity"/>
+        <provider android:name="android.support.v4.content.FileProvider" android:exported="false" android:authorities="com.rachio.iro.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <service android:name="com.rachio.iro.fcm.Service">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.rachio.iro.fcm.IDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/rachio_mark_white"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/rachio_white"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.rachio.iro"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver" android:exported="false"/>
+        <service android:name="com.google.firebase.iid.FirebaseInstanceIdService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.rachio.iro.firebaseinitprovider" android:initOrder="100"/>
+        <activity android:theme="@style/InstabugSdkTheme" android:name="com.instabug.library.InstabugFeedbackActivity" android:launchMode="singleTop" android:windowSoftInputMode="adjustResize"/>
+        <service android:name="com.instabug.library.InstabugSessionUploaderService"/>
+        <service android:name="com.instabug.library.InstabugIssueUploaderService"/>
+        <service android:name="com.instabug.library.InstabugMessageUploaderService"/>
+        <service android:name="com.instabug.library.InstabugFeaturesFetcherService"/>
+        <service android:name="com.instabug.library.gcm.InstabugGcmRegistrationIntentService"/>
+        <receiver android:name="com.instabug.library.InstabugNetworkReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.squareup.picasso.PicassoProvider" android:exported="false" android:authorities="com.rachio.iro.com.squareup.picasso"/>
+    </application>
+</manifest>

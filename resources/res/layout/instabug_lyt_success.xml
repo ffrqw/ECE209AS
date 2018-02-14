@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:layout_gravity="center" android:padding="@dimen/instabug_dialog_container_padding" android:layout_width="wrap_content" style="@style/InstabugBaseContainer">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/instabug_img_success" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/instabug_img_success"/>
+    <TextView android:textSize="16sp" android:textColor="?attr/instabug_color_foreground" android:gravity="center_horizontal" android:id="@+id/instabug_txt_success_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="8dp" android:text="@string/instabug_str_thank_you"/>
+</LinearLayout>

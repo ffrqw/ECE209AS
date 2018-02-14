@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/rachio_white" android:paddingTop="@dimen/padding_general" android:paddingBottom="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:paddingLeft="@dimen/padding_general" android:paddingRight="@dimen/padding_general" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15sp" android:textColor="@color/rachio_black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding_half" android:text="What schedule would you like to add?"/>
+            <android.support.v7.widget.CardView style="@style/scheduletype_card">
+                <android.support.v7.widget.GridLayout android:id="@+id/scheduletype_fixedinterval" style="@style/scheduletype_grid">
+                    <ImageView android:src="@drawable/sched_type_fixed_interval" style="@style/scheduletype_icon"/>
+                    <TextView android:text="@string/scheduletype_fixedinterval" style="@style/scheduletype_title"/>
+                    <TextView android:text="Waters on a set interval or odd/even days." style="@style/scheduletype_description"/>
+                    <com.rachio.iro.ui.newschedulerulepath.views.ScheduleTypeSavingsBarView app:indicatorpercentage="0.25" style="@style/scheduletype_bar"/>
+                </android.support.v7.widget.GridLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView style="@style/scheduletype_card">
+                <android.support.v7.widget.GridLayout android:id="@+id/scheduletype_fixeddays" style="@style/scheduletype_grid">
+                    <ImageView android:src="@drawable/sched_type_fixed_days" style="@style/scheduletype_icon"/>
+                    <TextView android:text="@string/scheduletype_fixeddays" style="@style/scheduletype_title"/>
+                    <TextView android:text="Waters on specific days of the week." style="@style/scheduletype_description"/>
+                    <com.rachio.iro.ui.newschedulerulepath.views.ScheduleTypeSavingsBarView app:indicatorpercentage="0.25" style="@style/scheduletype_bar"/>
+                </android.support.v7.widget.GridLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView style="@style/scheduletype_card">
+                <android.support.v7.widget.GridLayout android:id="@+id/scheduletype_seasonal" style="@style/scheduletype_grid">
+                    <ImageView android:src="@drawable/sched_type_monthly_flex" style="@style/scheduletype_icon"/>
+                    <TextView android:text="@string/scheduletype_flexmonthly" style="@style/scheduletype_title"/>
+                    <TextView android:text="Adjusts monthly based on local climate." style="@style/scheduletype_description"/>
+                    <com.rachio.iro.ui.newschedulerulepath.views.ScheduleTypeSavingsBarView app:indicatorpercentage="0.75" style="@style/scheduletype_bar"/>
+                </android.support.v7.widget.GridLayout>
+            </android.support.v7.widget.CardView>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView android:layout_gravity="top" android:layout_marginBottom="0dp" style="@style/scheduletype_card">
+                    <android.support.v7.widget.GridLayout android:id="@+id/scheduletype_soilbased" style="@style/scheduletype_grid">
+                        <ImageView android:src="@drawable/sched_type_daily_flex" style="@style/scheduletype_icon"/>
+                        <TextView android:text="@string/scheduletype_flexdaily" style="@style/scheduletype_title"/>
+                        <TextView android:text="Adjusts daily based on soil moisture." style="@style/scheduletype_description"/>
+                        <com.rachio.iro.ui.newschedulerulepath.views.ScheduleTypeSavingsBarView app:indicatorpercentage="1.0" style="@style/scheduletype_bar"/>
+                    </android.support.v7.widget.GridLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView android:layout_gravity="center_horizontal" android:id="@+id/scheduletype_nomoreflex" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_double" android:layout_marginTop="24sp" android:layout_marginRight="@dimen/padding_double" app:cardCornerRadius="12dp" app:cardElevation="6dp" app:cardUseCompatPadding="true">
+                    <TextView android:gravity="center" android:padding="@dimen/padding_half" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="0dp" android:text="All zones are already in a Flexible Daily schedule." style="@style/scheduletype_title"/>
+                </android.support.v7.widget.CardView>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
