@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages Test
+## Hacking rachio, the Smart Sprinkler Controller
 
 You can use the [editor on GitHub](https://github.com/ffrqw/EE209AS/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
