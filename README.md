@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ## ECE 209AS: Special Topics in Circuits and Embedded Systems: Security and Privacy for Embedded Systems, Cyber-Physical Systems, and Internet of Things
+=======
+## Hacking rachio, the Smart Sprinkler Controller
+>>>>>>> 088106c0ffb08eaa14e5c6d58c2b5fa2f2839634
 
 You can use the [editor on GitHub](https://github.com/ffrqw/EE209AS/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
