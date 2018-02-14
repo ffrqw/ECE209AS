@@ -11,12 +11,11 @@ XXXX
 - Insecure authentication mechanism used in the serial ports  
 - Ability to dump the firmware over JTAG or via Flash chips  
 
-**Attempt**: access to the circuit board.  
+**Attempt**: Access to the circuit board.  
 
 **Result**: Failed. The device is well packaged with no screws. The only way to open it is smashing the shell. But we don’t have proper tools to do so.  
 
-### Firmware, software, application
-1. Firmware
+### Firmware
 - Ability to modify firmware  
 - Hardcoded sensitive values in the  firmware—API keys,
 passwords, staging URLs, etc.  
@@ -25,13 +24,13 @@ through the firmware
 - File system extraction from the firmware  
 
 **Attempt**:  
-- Download from official website  
-**Result**: failed. Refuse to provide.
+(1). Download from official website  
+**Result**: Failed. Refuse to provide.
 
-- Draw from hardware  
-**Result**: failed. Due to the same reason in hardware part.  
+(2). Draw from hardware  
+**Result**: Failed. Due to the same reason in hardware part.  
 
-2. Mobile application
+### Mobile application
 - Reverse engineering the mobile app  
 - Dumping source code of the mobile application  
 - Side channel data leakage  
