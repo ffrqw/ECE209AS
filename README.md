@@ -3,7 +3,7 @@ Hacking Rachio, the Smart WiFi Sprinkler Controller
 
 ## What is Rachio?
 XXXX
-![Rachio](link)
+![Rachio](https://github.com/ffrqw/ECE209AS/blob/master/images/rachio.jpg?raw=true)
 ## Security attack model navigation
 
 ### Hardware  
