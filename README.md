@@ -36,8 +36,15 @@ through the firmware
 - Insecure network communication  
 - Outdated 3rd party libraries and SDKs  
 
-### Kali attempt
-- auxiliary module
+### Pentest 
+**Port Scanning**
+- Metasploit Nmap
+
+**Vulunrablity Analysis**
+- OpenVAS
+
+**Dos Attack**
+- Metasploit auxiliary module
 
 **Attempt**:
 Analyze the Android app.
