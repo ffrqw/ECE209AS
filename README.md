@@ -36,6 +36,9 @@ through the firmware
 - Insecure network communication  
 - Outdated 3rd party libraries and SDKs  
 
+### Kali attempt
+- auxiliary module
+
 **Attempt**:
 Analyze the Android app.
 
