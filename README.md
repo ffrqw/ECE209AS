@@ -3,7 +3,7 @@ Hacking Rachio, the Smart WiFi Sprinkler Controller
 
 ## What is Rachio?
 XXXX
-
+![Rachio](link)
 ## Security attack model navigation
 
 ### Hardware  
@@ -36,7 +36,7 @@ through the firmware
 - Insecure network communication  
 - Outdated 3rd party libraries and SDKs  
 
-### Pentest 
+### Penetration Testing 
 **Port Scanning**
 - Metasploit Nmap
 
