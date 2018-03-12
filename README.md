@@ -3,7 +3,7 @@ Hacking Rachio, the Smart WiFi Sprinkler Controller
 
 ## What is Rachio?
 Rachio is the Smart Sprinkler Controller that gives you control of your sprinklers and watering bill, right from your smart phone.
-![Rachio](https://github.com/ffrqw/ECE209AS/blob/master/images/rachio.jpg?raw=true)
+![Rachio](https://github.com/ffrqw/ECE209AS/blob/master/images/rachio.jpg?raw=true){:height="80%" width="80%"}
 ## Security Attack Model Navigation
 We navigated security attack models of Rachio following the guidance of 
 ### Hardware  
@@ -47,11 +47,11 @@ root@kali:~# nmap -v -sV -oA port_scanning 192.168.1.0/29
 
 NxEco  
 
-![nxeco_scan](https://github.com/ffrqw/ECE209AS/blob/master/images/nxeco_scan.png?raw=true)
+![nxeco_scan](https://github.com/ffrqw/ECE209AS/blob/master/images/nxeco_scan.png?raw=true){:height="50%" width="50%"}
 
 Rachio  
 
-![rachio_scan](https://github.com/ffrqw/ECE209AS/blob/master/images/rachio_scan.png?raw=true)
+![rachio_scan](https://github.com/ffrqw/ECE209AS/blob/master/images/rachio_scan.png?raw=true){:height="50%" width="50%"}
 
 **Vulunrablity Analysis**
 - OpenVAS
@@ -60,15 +60,15 @@ Rachio
 
 NxEco  
 
-![nxeco_edit](https://github.com/ffrqw/ECE209AS/blob/master/images/nxeco_edit.png?raw=true)
+![nxeco_edit](https://github.com/ffrqw/ECE209AS/blob/master/images/nxeco_edit.png?raw=true){:height="50%" width="50%"}
 
-![nxeco_results](https://github.com/ffrqw/ECE209AS/blob/master/images/nxeco.png?raw=true)
+![nxeco_results](https://github.com/ffrqw/ECE209AS/blob/master/images/nxeco.png?raw=true){:height="50%" width="50%"}
 
 Rachio  
 
-![rachio_edit](https://github.com/ffrqw/ECE209AS/blob/master/images/rachio_edit.png?raw=true)
+![rachio_edit](https://github.com/ffrqw/ECE209AS/blob/master/images/rachio_edit.png?raw=true){:height="50%" width="50%"}
 
-![rachio_results](https://github.com/ffrqw/ECE209AS/blob/master/images/rachio.png?raw=true)
+![rachio_results](https://github.com/ffrqw/ECE209AS/blob/master/images/rachio.png?raw=true){:height="50%" width="50%"}
 
 
 **DoS Attack**
@@ -88,7 +88,7 @@ NxEco
 
 Rachio  
 
-![rachio_flood](https://github.com/ffrqw/ECE209AS/blob/master/images/rachio_flood.png?raw=true)
+![rachio_flood](https://github.com/ffrqw/ECE209AS/blob/master/images/rachio_flood.png?raw=true){:height="80%" width="80%"}
 
 
 ### Mobile application
