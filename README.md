@@ -47,7 +47,7 @@ root@kali:~# nmap -v -sV -oA port_scanning 192.168.1.0/29
 
 NxEco  
 
-![nxeco_scan](https://github.com/ffrqw/ECE209AS/blob/master/images/nxeco_scan.png?raw=true){:height="50%" width="50%"}
+![nxeco_scan](https://github.com/ffrqw/ECE209AS/blob/master/images/nxeco_scan.png?raw=true){height="50%" width="50%"}
 
 Rachio  
 
