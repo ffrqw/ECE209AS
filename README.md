@@ -3,7 +3,7 @@ Hacking Rachio, the Smart WiFi Sprinkler Controller
 
 ## What is Rachio?
 Rachio is the Smart Sprinkler Controller that gives you control of your sprinklers and watering bill, right from your smart phone.
-![Rachio](https://github.com/ffrqw/ECE209AS/blob/master/images/rachio.jpg?raw=true)<!-- .element height="50%" width="50%" -->
+![Rachio](https://github.com/ffrqw/ECE209AS/blob/master/images/rachio.jpg?raw=true | width=48)
 ## Security Attack Model Navigation
 We navigated security attack models of Rachio following the guidance of 
 ### Hardware  
