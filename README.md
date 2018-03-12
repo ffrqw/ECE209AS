@@ -56,7 +56,7 @@ Rachio
 **Vulunrablity Analysis**
 - OpenVAS
 
-- Results  
+*Results*  
 
 NxEco  
 
@@ -80,7 +80,7 @@ msf auxiliary(dos/tcp/synflood) > set RHOST 192.168.1.9
 RHOST => 192.168.1.9
 msf auxiliary(dos/tcp/synflood) > run
 ```
-*Results  
+*Results*  
 
 NxEco  
 
