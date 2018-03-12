@@ -42,7 +42,7 @@ Here are the implementations.
 root@kali:~# nmap -v -sV -oA port_scanning 192.168.1.0/29
 '''
 
-- Results
+- Results  
 NxEco
 ![nxeco_scan](https://github.com/ffrqw/ECE209AS/blob/master/images/nxeco_scan.png?raw=true)
 
@@ -52,7 +52,7 @@ Rachio
 **Vulunrablity Analysis**
 - OpenVAS
 
-- Results
+- Results  
 NxEco
 ![nxeco_edit](https://github.com/ffrqw/ECE209AS/blob/master/images/nxeco_edit.png?raw=true)
 
