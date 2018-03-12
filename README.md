@@ -48,11 +48,12 @@ root@kali:~# nmap -v -sV -oA port_scanning 192.168.1.0/29
 
 NxEco  
 
-![nxeco_scan](https://github.com/ffrqw/ECE209AS/blob/master/images/nxeco_scan.png?raw=true){width="50%"}
+<img src="https://github.com/ffrqw/ECE209AS/blob/master/images/nxeco_scan.png?raw=true" width="500">
+
 
 Rachio  
 
-![rachio_scan](https://github.com/ffrqw/ECE209AS/blob/master/images/rachio_scan.png?raw=true){:height="50%" width="50%"}
+<img src="https://github.com/ffrqw/ECE209AS/blob/master/images/rachio_scan.png?raw=true" width="500">
 
 **Vulunrablity Analysis**
 - OpenVAS
@@ -61,15 +62,15 @@ Rachio
 
 NxEco  
 
-![nxeco_edit](https://github.com/ffrqw/ECE209AS/blob/master/images/nxeco_edit.png?raw=true){:height="50%" width="50%"}
+<img src="https://github.com/ffrqw/ECE209AS/blob/master/images/nxeco_edit.png?raw=true" width="500">
 
-![nxeco_results](https://github.com/ffrqw/ECE209AS/blob/master/images/nxeco.png?raw=true){:height="50%" width="50%"}
+<img src="https://github.com/ffrqw/ECE209AS/blob/master/images/nxeco.png?raw=true" width="500">
 
 Rachio  
 
-![rachio_edit](https://github.com/ffrqw/ECE209AS/blob/master/images/rachio_edit.png?raw=true){:height="50%" width="50%"}
+<img src="https://github.com/ffrqw/ECE209AS/blob/master/images/rachio_edit.png?raw=true" width="500">
 
-![rachio_results](https://github.com/ffrqw/ECE209AS/blob/master/images/rachio.png?raw=true){:height="50%" width="50%"}
+<img src="https://github.com/ffrqw/ECE209AS/blob/master/images/rachio.png?raw=true" width="500">
 
 
 **DoS Attack**
@@ -85,11 +86,11 @@ msf auxiliary(dos/tcp/synflood) > run
 
 NxEco  
 
-![nxeco_flood](https://github.com/ffrqw/ECE209AS/blob/master/images/nxeco_flood.png?raw=true)
+<img src="https://github.com/ffrqw/ECE209AS/blob/master/images/nxeco_flood.png?raw=true" width="500">
 
 Rachio  
 
-![rachio_flood](https://github.com/ffrqw/ECE209AS/blob/master/images/rachio_flood.png?raw=true){:height="80%" width="80%"}
+<img src="https://github.com/ffrqw/ECE209AS/blob/master/images/rachio_flood.png?raw=true" width="500">
 
 
 ### Mobile application
