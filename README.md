@@ -2,10 +2,10 @@
 Hacking Rachio, the Smart WiFi Sprinkler Controller
 
 ## What is Rachio?
-XXXX
+Rachio is the Smart Sprinkler Controller that gives you control of your sprinklers and watering bill, right from your smart phone.
 ![Rachio](https://github.com/ffrqw/ECE209AS/blob/master/images/rachio.jpg?raw=true)
-## Security attack model navigation
-
+## Security Attack Model Navigation
+We navigated security attack models of Rachio following the guidance of 
 ### Hardware  
 - Serial ports exposed  
 - Insecure authentication mechanism used in the serial ports  
@@ -13,6 +13,7 @@ XXXX
 
 **Attempt**: Access to the circuit board.  
 **Result**: Failed. The device is well packaged with no screws. The only way to open it is smashing the shell. But we don’t have proper tools to do so.  
+![Rachio well encasulated]()
 
 ### Firmware
 - Ability to modify firmware  
@@ -28,6 +29,40 @@ through the firmware
 **Attempt**: Draw from hardware.  
 **Result**: Failed. Due to the same reason in hardware part.  
 
+
+### Penetration Testing 
+
+In our Penetration testing, we compared Rachio with NxEco, another popular smart sprinkle device. We conducted our test under the same WIFI. Based on this condition, we did reconnaissance on the devices and tried to find infomation about OS of the devices. Then we did vulunrability analysis with OpenVAS and found a potential vulunrability that the devices are using tcp connection that may be attacked by DoS(Denial of Service). Finally we executed a DoS attack to see if the vulunrability exists.
+Here are the implementations.
+
+**Port Scanning**
+- Metasploit Nmap
+use 'nmap' to scanning ports on both devices. They are in the
+'''
+
+'''
+- result
+![Nmap]()
+
+**Vulunrablity Analysis**
+- OpenVAS
+
+'''
+
+'''
+- result
+![openvas]()
+
+**DoS Attack**
+- Metasploit auxiliary module
+
+'''
+
+'''
+-result
+![DoS]()
+
+
 ### Mobile application
 - Reverse engineering the mobile app  
 - Dumping source code of the mobile application  
@@ -35,17 +70,6 @@ through the firmware
 - Runtime manipulation attacks  
 - Insecure network communication  
 - Outdated 3rd party libraries and SDKs  
-
-### Penetration Testing 
-**Port Scanning**
-- Metasploit Nmap
-
-**Vulunrablity Analysis**
-- OpenVAS
-
-**Dos Attack**
-- Metasploit auxiliary module
-
 **Attempt**:
 Analyze the Android app.
 
@@ -54,3 +78,4 @@ XXX
   
 ## Reference
 【1】IoT Hackers Handbook: An ultimate guide to hacking the Internet of Things
+【2】https://www.kali.org/
