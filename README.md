@@ -104,7 +104,9 @@ Rachio
 Analyze the Android app.
 
 ## TODO
-Intercept HTTP packet from Rachio server to Rachio controller (use dSniff).
+- Intercept HTTP packet from Rachio server to Rachio controller (use dSniff).
+- Analyze app code (use jDax and Inspeckage).
+- kill TCP connection.
   
 ## Reference
 【1】IoT Hackers Handbook: An ultimate guide to hacking the Internet of Things
