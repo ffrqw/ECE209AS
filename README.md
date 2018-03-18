@@ -103,8 +103,8 @@ Rachio
 **Attempt**:
 Analyze the Android app.
 
-## Timeline
-XXX
+## TODO
+Intercept HTTP packet from Rachio server to Rachio controller (use dSniff).
   
 ## Reference
 【1】IoT Hackers Handbook: An ultimate guide to hacking the Internet of Things
